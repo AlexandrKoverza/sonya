@@ -1,0 +1,36 @@
+.rating{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    position: relative;
+}
+.rating input[type="radio"]{
+    display: none;
+}
+.rating label{
+    display: block;
+    cursor: pointer;
+}
+.rating label::before{
+    content: '\f005';
+    font-size: 30px;
+    font-family: fontAwesome;
+    color: black;
+}
+.rating label::after{
+    content: '\f005';
+    font-size: 30px;
+    font-family: fontAwesome;
+    color: yellow;
+    position: absolute;
+    display: block;
+    top: 0%;
+    opacity: 0;
+    transition: all 250ms ease;
+}
+.rating label:hover::after,
+.rating label:hover ~ label::after,
+.rating input:checked ~ label::after{
+    opacity: 1;
+}

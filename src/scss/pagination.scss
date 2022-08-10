@@ -1,0 +1,20 @@
+.pages {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pages-list {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.pages-list__link {
+    color: black;
+    font-size: 18px;
+}
+
+.pages-list__link:hover {
+    text-decoration: underline;
+}

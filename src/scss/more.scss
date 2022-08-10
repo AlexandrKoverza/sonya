@@ -1,0 +1,45 @@
+.wrap {
+}
+.block {
+    max-height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+.block .bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    opacity: 1;
+    transition: .3s;
+    background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 1) 80%
+    );
+}
+.check{
+    opacity: 0;
+    position: absolute;
+}
+.more{
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.check ~ .more::after{
+    content: 'More';
+}
+.check:checked ~ .more::after{
+    content: 'Less';
+}
+.check:checked ~ .block{
+    max-height: none;
+}
+.check:checked ~ .block .bottom{
+    opacity: 0;
+    transition: .3s;
+}
