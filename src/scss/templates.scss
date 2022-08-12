@@ -2,7 +2,9 @@ body {
 	font-family: Inter;
 	font-weight: 400;
 }
-
+main{
+    overflow-x: hidden;
+}
 .container {
     max-width: 1160px;
     margin: 0 auto;
