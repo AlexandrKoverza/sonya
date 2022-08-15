@@ -52,12 +52,22 @@ main{
     font-family: OpenSans;
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 30px;
     color: $white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.button3{
+    background: #F15B5B;
+    border-radius: 50px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $white;
 }
 .big-img{
     width: 100%;
@@ -70,9 +80,18 @@ main{
 .bg2{
     background: url('@img/home/home-big2.png') 11% no-repeat;
 }
-.bg3{}
-.bg4{}
-.bg5{}
+.bg3{
+    background: url('@img/home/home-big3.png') center no-repeat;
+    @media (max-width: $iphone + px) {
+        background-repeat: repeat;
+    }
+}
+.bg4{
+    background: url('@img/home/home-big4.png') 59% no-repeat;
+}
+.bg5{
+    background: url('@img/home/home-big5.png') 36% no-repeat;
+}
 .bg6{}
 .bg7{}
 .bg8{}
