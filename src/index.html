@@ -5,7 +5,7 @@
 <body>
 	<main class="wrapper max-width">
 		@@include('html/header.html',{})
-		<section class="intro big-img bg1">
+		<section class="intro big-img bg1" id="intro">
 			<div class="container">
 				<div class="intro-inner">
 					<h1 class="intro-title">
@@ -296,6 +296,9 @@
 					</button>
 				</div>
 			</div>
+			<img src="@img/home/course-green.png" alt="image" class="course-green" />
+			<img src="@img/home/course-eggs.png" alt="image" class="course-eggs" />
+
 		</section>
 		<section class="for">
 			<div class="container">
@@ -380,6 +383,9 @@
 				</div>
 			</div>
 		</section>
+		<a href="#intro" class="toTop">
+			<img src="@img/arrow-up.png" alt="image">
+		</a>
 		@@include('html/footer.html',{})
 	</main>
 	<script src="js/app.min.js"></script>

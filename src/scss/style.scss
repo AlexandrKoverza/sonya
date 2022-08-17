@@ -332,6 +332,10 @@
         width: 460px;
         margin-right: 79px;
 
+        @media (max-width: 1100px) {
+            margin-right: 40px;
+        }
+
         @media (max-width: $ipad + px) {
             width: 360px;
             margin-right: 20px;
@@ -650,6 +654,12 @@
 
         @media (max-width: $ipod + px) {
             font-size: 28px;
+            line-height: 40px;
+        }
+
+        @media (max-width: $iphone + px) {
+            font-size: 20px;
+            line-height: 30px;
         }
     }
 
@@ -987,6 +997,7 @@
 .course-item {
     display: flex;
     align-items: center;
+    z-index: 2;
 
     &__img {
         width: 64px;
@@ -1009,6 +1020,34 @@
 .course-button {
     margin: 0 auto;
 }
+
+.course-green {
+    position: absolute;
+    left: 0;
+    top: -100px;
+    z-index: 1;
+
+    @media (max-width: $ipod + px) {
+        top: -42px;
+        width: 110px;
+    }
+
+    @media (max-width: $iphone + px) {
+        display: none;
+    }
+}
+
+.course-eggs {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    z-index: 1;
+
+    @media (max-width: $ipod + px) {
+        width: 110px;
+    }
+}
+
 
 // FOR
 
@@ -1113,14 +1152,17 @@
 .recommendation-inner {
     padding-top: 74px;
     padding-bottom: 74px;
+
     @media (max-width: $ipad + px) {
         padding-top: 54px;
         padding-bottom: 54px;
     }
+
     @media (max-width: $ipod + px) {
         padding-top: 34px;
         padding-bottom: 34px;
     }
+
     @media (max-width: $iphone + px) {
         padding-top: 25px;
         padding-bottom: 25px;
@@ -1135,9 +1177,11 @@
     line-height: 50px;
     text-align: center;
     color: #414141;
+
     @media (max-width: $ipod + px) {
         font-size: 26px;
     }
+
     @media (max-width: $iphone + px) {
         font-size: 22px;
     }
@@ -1197,6 +1241,7 @@
         line-height: 24px;
         text-transform: uppercase;
         color: $white;
+
         @media (max-width: $iphone + px) {
             font-size: 20px;
         }
@@ -1228,39 +1273,47 @@
         line-height: 24px;
         text-transform: uppercase;
         color: $black;
+
         @media (max-width: $ipod + px) {
             font-size: 18px;
             margin-top: 10px;
         }
+
         @media (max-width: $ipod + px) {
             font-size: 16px;
         }
     }
 }
-.recommendation-block__img{
+
+.recommendation-block__img {
     @media (max-width: $iphone + px) {
         width: 290px;
     }
 }
+
 .recommendation-block:last-child {
     margin-right: 0;
 }
 
 // REVIEWS  
-.reviews{
+.reviews {
     width: 100%;
 }
-.reviews-inner{
+
+.reviews-inner {
     padding-top: 74px;
     padding-bottom: 74px;
+
     @media (max-width: $ipad + px) {
         padding-top: 54px;
         padding-bottom: 54px;
     }
+
     @media (max-width: $ipod + px) {
         padding-top: 34px;
         padding-bottom: 34px;
     }
+
     @media (max-width: $iphone + px) {
         padding-top: 25px;
         padding-bottom: 25px;
@@ -1273,6 +1326,7 @@
 
 .reviews-tabs .tabs-buttons {
     display: flex;
+
     @media (max-width: $iphone + px) {
         flex-direction: column;
     }
@@ -1290,6 +1344,7 @@
     color: #35414D;
     width: 50%;
     cursor: pointer;
+
     @media (max-width: $iphone + px) {
         height: 70px;
         font-size: 26px;
@@ -1310,6 +1365,7 @@
     display: none;
     padding-top: 45px;
     padding-bottom: 45px;
+
     @media (max-width: $iphone + px) {
         padding-top: 25px;
         padding-bottom: 25px;
@@ -1327,6 +1383,7 @@
     justify-content: center;
     position: relative;
 }
+
 .video-bg {
     width: 100%;
     height: 310px;
@@ -1335,10 +1392,12 @@
     top: 25px;
     left: 0;
     z-index: -1;
+
     @media (max-width: $iphone + px) {
         display: none;
     }
 }
+
 .video {
     width: 640px;
     height: 350px;
@@ -1347,123 +1406,760 @@
     align-items: center;
     justify-content: center;
 }
-.video .review-play{
+
+.video .review-play {
     cursor: pointer;
 }
 
 // QUESTIONS
 
-.questions {
-}
+.questions {}
+
 .questions-inner {
     padding-top: 137px;
     padding-bottom: 137px;
+
     @media (max-width: $ipad + px) {
         padding-top: 90px;
         padding-bottom: 90px;
     }
+
     @media (max-width: $ipod + px) {
         padding-top: 50px;
         padding-bottom: 50px;
     }
 }
+
 .questions-form {
     width: 510px;
     margin-left: auto;
+
     @media (max-width: 1200px) {
         margin-right: 100px;
     }
+
     @media (max-width: $ipod + px) {
         width: 100%;
         margin-left: 0;
         margin-right: 0;
     }
-		&__title {
-            font-family: Segoe;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 50px;
-            color: $white;
-            @media (max-width: $iphone + px) {
-                font-size: 26px;
-            }
-		}
 
-		&__text {
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-            color: #E8E8E8;
-		}
+    &__title {
+        font-family: Segoe;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 50px;
+        color: $white;
 
-		&__inputs {
-            margin-top: 22px;
+        @media (max-width: $iphone + px) {
+            font-size: 26px;
+        }
+    }
+
+    &__text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #E8E8E8;
+    }
+
+    &__inputs {
+        margin-top: 22px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: $ipod + px) {
+            flex-direction: column;
+        }
+    }
+
+    &__input {
+        @media (max-width: $ipod + px) {
             width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            @media (max-width: $ipod + px) {
-                flex-direction: column;
-            }
+            margin-bottom: 15px;
         }
 
-		&__input {
-            @media (max-width: $ipod + px) {
-                width: 100%;
-                margin-bottom: 15px;
-            }
-            width: 49%;
-            height: 46px;
-            background: #FFFFFF;
-            border-radius: 50px;
-            padding-left: 11px;
-            font-family: OpenSans;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 30px;
-            color: #A49797;
-		}
-        &__input::placeholder{
-            font-family: OpenSans;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 30px;
-            color: #A49797;
-        }
-		&__textarea {
-            width: 100%;
-            height: 140px;
-            border-radius: 20px;
-            font-family: OpenSans;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 30px;
-            color: #A49797;
-            padding: 11px;
-            margin-top: 6px;
-            @media (max-width: $ipod + px) {
-                margin-top: 0;
-            }
-		}
-        &__textarea::placeholder{
-            font-family: OpenSans;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 30px;
-            color: #A49797;
-        }
+        width: 49%;
+        height: 46px;
+        background: #FFFFFF;
+        border-radius: 50px;
+        padding-left: 11px;
+        font-family: OpenSans;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 30px;
+        color: #A49797;
+    }
 
-		&__button {
-            margin-top: 20px;
-		}
+    &__input::placeholder {
+        font-family: OpenSans;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 30px;
+        color: #A49797;
+    }
+
+    &__textarea {
+        width: 100%;
+        height: 140px;
+        border-radius: 20px;
+        font-family: OpenSans;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 30px;
+        color: #A49797;
+        padding: 11px;
+        margin-top: 6px;
+
+        @media (max-width: $ipod + px) {
+            margin-top: 0;
+        }
+    }
+
+    &__textarea::placeholder {
+        font-family: OpenSans;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 30px;
+        color: #A49797;
+    }
+
+    &__button {
+        margin-top: 20px;
+    }
 }
 
+.toTop {
+    display: none;
 
+}
 
+.toTop-fixed {
+    display: flex;
+    position: fixed;
+    bottom: 110px;
+    right: 103px;
+    border-radius: 50%;
+    z-index: 100;
+    border: 2px solid white;
+
+    @media (max-width: $ipad + px) {
+        bottom: 95px;
+        right: 50px;
+    }
+
+    @media (max-width: $iphone + px) {
+        right: 15px;
+    }
+}
+
+//==================Recipe Cards==============================================//
+
+// recipeCollection
+
+.recipeCollection {
+    width: 100%;
+    background-color: $white;
+}
+
+.recipeCollection-inner {
+    padding-top: 100px;
+    padding-bottom: 120px;
+
+    @media (max-width: $ipad + px) {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    @media (max-width: $ipod + px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    @media (max-width: $iphone + px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+.recipeCollection-row {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media (max-width: $ipod + px) {
+        flex-direction: column;
+    }
+}
+
+.recipeCollection-item {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @media (max-width: $ipod + px) {
+        width: 100%;
+    }
+
+    &__img {
+        width: 60px;
+    }
+
+    &__text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+        text-align: center;
+        color: $black;
+        margin-top: 28px;
+
+        @media (max-width: $ipad + px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: $ipod + px) {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+    }
+}
+
+.recipeCollection-item:nth-child(2) {
+    margin-left: 10px;
+    margin-right: 10px;
+
+    @media (max-width: $ipod + px) {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+.recipeCards-button {
+    margin-top: 48px;
+}
+
+.recipeCards-button a {
+    font-size: 12px;
+}
+
+// recipeInformation
+
+.recipeInformation {
+    width: 100%;
+    background-color: $white;
+}
+
+.recipeInformation-inner {
+    padding-top: 85px;
+    padding-bottom: 100px;
+
+    @media (max-width: $ipad + px) {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    @media (max-width: $ipod + px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    @media (max-width: $iphone + px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+.recipeInformation-row {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media (max-width: $ipod + px) {
+        flex-direction: column;
+    }
+}
+
+.recipeInformation-item {
+    width: 33%;
+
+    @media (max-width: $ipod + px) {
+        width: 100%;
+    }
+
+    &__img {
+        width: 60px;
+    }
+
+    &__text {
+        margin-top: 25px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #000000;
+
+        @media (max-width: $ipad + px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: $ipod + px) {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+    }
+}
+
+.recipeInformation-item:nth-child(2) {
+    margin-right: 10px;
+    margin-left: 10px;
+
+    @media (max-width: $ipod + px) {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+// recipeHow
+
+.recipeHow {
+    width: 100%;
+    background-color: $white;
+}
+
+.recipeHow-inner {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media (max-width: $ipad + px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    @media (max-width: $ipod + px) {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    @media (max-width: $iphone + px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+.recipeHow-title {
+    font-weight: 700;
+
+    @media (max-width: $ipod + px) {
+        text-align: center;
+    }
+
+    @media (max-width: $iphone + px) {
+        font-size: 20px;
+    }
+}
+
+.recipeHow-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 46px;
+
+    @media (max-width: $ipad + px) {
+        margin-top: 35px;
+    }
+
+    @media (max-width: $ipod + px) {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+}
+
+.recipeHow-item {
+    width: 33%;
+    padding: 33px 30px;
+    height: 178px;
+    background: #FBF8F1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @media (max-width: $ipad + px) {
+        padding: 18px;
+        height: 150px;
+    }
+
+    @media (max-width: $ipod + px) {
+        width: 390px;
+        justify-content: center;
+    }
+
+    @media (max-width: 480px) {
+        width: 100%;
+    }
+
+    &__img {
+        width: 60px;
+    }
+
+    &__text {
+        margin-top: 20px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+        color: #000000;
+
+        @media (max-width: $iphone + px) {
+            font-size: 14px;
+        }
+    }
+}
+
+.recipeHow-item:nth-child(2) {
+    margin-right: 10px;
+    margin-left: 10px;
+
+    @media (max-width: $ipod + px) {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+// onlineCourseCollection
+
+.onlineCourseCollection {
+    width: 100%;
+    background-color: $white;
+}
+
+.onlineCourseCollection-inner {
+    padding-top: 100px;
+    padding-bottom: 120px;
+
+    @media (max-width: $ipad + px) {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    @media (max-width: $ipod + px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    @media (max-width: $iphone + px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+.onlineCourseCollection-row {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.onlineCourseCollection-item {
+    width: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @media (max-width: $ipad + px) {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: $ipod + px) {
+        width: 100%;
+    }
+
+    &__img {
+        width: 60px;
+        height: 75px;
+
+        @media (max-width: $iphone + px) {
+            height: fit-content;
+            width: fit-content;
+        }
+    }
+
+    &__text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+        text-align: center;
+        color: $black;
+        margin-top: 28px;
+
+        @media (max-width: $ipad + px) {
+            font-size: 18px;
+        }
+
+        @media (max-width: $ipod + px) {
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        @media (max-width: $iphone + px) {
+            font-size: 14px;
+        }
+    }
+}
+
+.onlineCourseCollection-item:nth-child(3),
+.onlineCourseCollection-item:last-child {
+    @media (max-width: $ipad + px) {
+        margin-bottom: 0px;
+    }
+}
+
+.onlineCourseCollection-item:nth-child(3) {
+    @media (max-width: $ipod + px) {
+        margin-bottom: 20px;
+    }
+}
+
+.onlineCourseCollection-item:last-child {
+    @media (max-width: $ipod + px) {
+        margin-bottom: 0px;
+    }
+}
+
+// wait
+
+.wait {
+    width: 100%;
+    background-color: #FBF8F1;
+}
+
+.wait-inner {
+    padding-top: 49px;
+    padding-bottom: 66px;
+
+    @media (max-width: $ipad + px) {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    @media (max-width: $ipod + px) {
+        padding-top: 35px;
+        padding-bottom: 30px;
+    }
+
+    @media (max-width: $iphone + px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+.wait-title {
+    text-align: center;
+}
+
+.wait-row {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 52px;
+}
+.wait-column {
+    width: 100%;
+
+    &__text {
+        min-height: 160px;
+    }
+}
+.wait-row .wait-column:first-child .wait-column__text{
+    text-align: right;
+}
+.wait-row .wait-column:first-child .wait-column__text:nth-child(2),
+.wait-row .wait-column:first-child .wait-column__text:nth-child(4) {
+    visibility: hidden;
+}
+.wait-row .wait-column:last-child .wait-column__text{
+    text-align: left;
+}
+.wait-column .wait-column__text:last-child{
+    min-height: auto;
+}
+.wait-row .wait-column:last-child .wait-column__text:nth-child(1),
+.wait-row .wait-column:last-child .wait-column__text:nth-child(3),
+.wait-row .wait-column:last-child .wait-column__text:nth-child(5) {
+    visibility: hidden;
+    @media (max-width: $ipod + px) {
+        visibility: visible;
+    }
+}
+.wait-row .wait-column:first-child {
+    @media (max-width: $ipod + px) {
+        display: none;
+    }
+}
+.wait-row .wait-column:last-child .wait-column__text:nth-child(2) {
+    @media (max-width: $iphone + px) {
+        min-height: 220px;
+    }
+}
+.wait-column__text{
+    @media (max-width: $ipod + px) {
+        font-size: 14px;
+    }
+}
+.wait-count {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: $ipod + px) {
+        width: 75px;
+    }
+}
+.wait-count .wait-count__box:nth-child(2) {
+    @media (max-width: $iphone + px) {
+        min-height: 220px;
+    }
+}
+.wait-count .wait-count__box:nth-child(2) .wait-box__hr {
+    @media (max-width: $iphone + px) {
+        width: 159px;
+        margin-top: 79px;
+    }
+}
+.wait-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 160px;
+    // @media (max-width: $ipod + px) {
+    //     min-height: 100px;
+    // }
+    &__img {
+        width: 60px;
+        height: fit-content;
+    }
+
+    &__hr {
+        height: 2px;
+        rotate: 90deg;
+        width: 100px;
+        margin-top: 48px;
+        background-color: #D0D0D0;
+        // @media (max-width: $ipod + px) {
+        //     width: 100px;
+        // }
+    }
+}
+.wait-box:last-child{
+    min-height: auto;
+}
+.wait-box:last-child .wait-box__hr{
+    display: none;
+}
+
+// learn
+
+.learn {
+    width: 100%;
+    background-color: $white;
+}
+
+.learn-inner {
+    padding-top: 80px;
+    padding-bottom: 120px;
+
+    @media (max-width: $ipad + px) {
+        padding-top: 60px;
+        padding-bottom: 90px;
+    }
+
+    @media (max-width: $ipod + px) {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    @media (max-width: $iphone + px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+.learn-description {
+    font-family: Segoe;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 50px;
+    text-align: center;
+    color: #343240;
+
+    @media (max-width: $ipad + px) {
+        font-size: 28px;
+        line-height: 46px;
+    }
+
+    @media (max-width: $ipod + px) {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    @media (max-width: $iphone + px) {
+        font-size: 20px;
+        line-height: 36px;
+    }
+}
+
+.learn-button {
+    margin: 0 auto;
+    margin-top: 34px;
+}
+
+// saw
+
+.saw .you-inner {
+    padding-top: 58px;
+    padding-bottom: 69px;
+
+    @media (max-width: $ipod + px) {
+        padding-top: 35px;
+        padding-bottom: 40px;
+    }
+
+    @media (max-width: $iphone + px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+.saw .you-block__item {
+    margin-top: 20px;
+}

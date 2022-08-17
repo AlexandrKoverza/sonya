@@ -1,9 +1,10 @@
 body {
 	font-family: Inter;
-	font-weight: 400;
+	font-weight: 400
 }
 main{
     overflow-x: hidden;
+    position: relative;
 }
 .container {
     max-width: 1160px;
@@ -92,8 +93,12 @@ main{
 .bg5{
     background: url('@img/home/home-big5.png') 36% no-repeat;
 }
-.bg6{}
-.bg7{}
+.bg6{
+    background: url('@img/recipeCards-big.png') center no-repeat;
+}
+.bg7{
+    background: url('@img/onlineCourse/onlineCourse-big.png') center no-repeat;
+}
 .bg8{}
 
 
