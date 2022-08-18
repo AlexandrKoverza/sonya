@@ -2,19 +2,33 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 22px;
 }
 
 .pages-list {
     display: flex;
     justify-content: space-between;
-    width: 300px;
+    width: 100px;
 }
 
 .pages-list__link {
-    color: black;
-    font-size: 18px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 28px;
+    color: #000000;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
 }
-
+.pages-list__link.active{
+    background: #F15B6C;
+    color: $white;
+}
 .pages-list__link:hover {
-    text-decoration: underline;
+    background: #e8b8be;
 }

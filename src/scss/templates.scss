@@ -15,6 +15,40 @@ main{
     max-width: 1440px;
     margin: 0 auto;
 }
+.breadCrumbs {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.breadCrumbs-links {
+        width: 100%;
+        display: flex;
+        align-items: center;
+		&__link {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            margin-right: 3px;
+            color: rgba(19, 19, 19, 0.5);
+            @media (max-width: $iphone + px) {
+                font-size: 14px;
+            }
+        }
+
+		&__text {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #131313;
+            @media (max-width: $iphone + px) {
+                font-size: 14px;
+            }
+		}
+}
 .name{
     font-family: Montserrat;
     font-style: normal;
@@ -60,6 +94,22 @@ main{
     align-items: center;
     justify-content: center;
 }
+.button2,
+.button2 a{
+    cursor: pointer;
+    width: 203px;
+    height: 56px;
+    background: url('@img/button2.png') center no-repeat;
+    font-family: OpenSans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 30px;
+    color: $red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .button3{
     background: #F15B5B;
     border-radius: 50px;
@@ -69,6 +119,22 @@ main{
     font-size: 16px;
     line-height: 24px;
     color: $white;
+}
+.button4,
+.button4 a{
+    cursor: pointer;
+    width: 203px;
+    height: 56px;
+    background: url('@img/button4.png') center no-repeat;
+    font-family: OpenSans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 30px;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .big-img{
     width: 100%;
@@ -99,6 +165,47 @@ main{
 .bg7{
     background: url('@img/onlineCourse/onlineCourse-big.png') center no-repeat;
 }
-.bg8{}
-
-
+.bg8{
+    background: url('@img/shop/shop-big.png') center no-repeat;
+}
+.bg9{
+    background: url('@img/chapter/chapter-big.png') center no-repeat;
+}
+.tegs-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 21px;
+}
+.teg {
+    width: fit-content;
+    margin-right: 10px;
+    height: 42px;
+    border: 1px solid #828282;
+    border-radius: 50px;
+    display: flex;
+    padding-right: 10px;
+    padding-left: 10px;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #828282;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 10px;
+    @media (max-width: $iphone + px){
+        height: 35px;
+    }
+}
+.teg:last-child{
+    margin-right: 0;
+}
+.teg:hover{
+    color: #000000;
+    border: 1px solid $red;
+}

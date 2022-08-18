@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{ "title":"Contacts" })
+
+<body>
+    <main class="wrapper max-width">
+        @@include('html/header.html',{})
+        <section class="breadCrumbs">
+            <div class="container">
+                <div class="breadCrumbs-links">
+                    <a href="index.html" class="breadCrumbs-links__link">Главная /</a>
+                    <span class="breadCrumbs-links__text">Контакты</span>
+                </div>
+            </div>
+        </section>
+        <section class="contacs">
+            <div class="container">
+                <div class="contacts-inner">
+                    <h3 class="contacs-title">Мои контакты</h3>
+                    <p class="contacs-text text">Контакты</p>
+                </div>
+            </div>
+        </section>
+        <section class="questions big-img bg5">
+			<div class="container">
+				<div class="questions-inner">
+					<form class="questions-form">
+						<h4 class="questions-form__title">Остались вопросы?</h4>
+						<p class="questions-form__text">Напишите мне, и я помогу</p>
+						<div class="questions-form__inputs">
+							<input type="text" class="questions-form__input" placeholder="Как вас зовут?">
+							<input type="email" class="questions-form__input" placeholder="Ваш E-mail">
+						</div>
+						<textarea placeholder="Ваш вопрос" class="questions-form__textarea"></textarea>
+						<button type="submit" class="questions-form__button button1">
+							<a href="">Отправить</a>
+						</button>
+					</form>	
+				</div>
+			</div>
+		</section>
+        <a href="#header" class="toTop">
+            <img src="@img/arrow-up.png" alt="image">
+        </a>
+        @@include('html/footer.html',{})
+    </main>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

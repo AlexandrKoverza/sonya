@@ -1768,6 +1768,7 @@
 
 .recipeHow-title {
     font-weight: 700;
+    text-align: center;
 
     @media (max-width: $ipod + px) {
         text-align: center;
@@ -1960,6 +1961,7 @@
 .wait {
     width: 100%;
     background-color: #FBF8F1;
+    position: relative;
 }
 
 .wait-inner {
@@ -1994,7 +1996,7 @@
 }
 .wait-column {
     width: 100%;
-
+    z-index: 2;
     &__text {
         min-height: 160px;
     }
@@ -2036,6 +2038,7 @@
     }
 }
 .wait-count {
+    z-index: 2;
     width: 100px;
     display: flex;
     flex-direction: column;
@@ -2060,9 +2063,6 @@
     flex-direction: column;
     align-items: center;
     min-height: 160px;
-    // @media (max-width: $ipod + px) {
-    //     min-height: 100px;
-    // }
     &__img {
         width: 60px;
         height: fit-content;
@@ -2074,9 +2074,6 @@
         width: 100px;
         margin-top: 48px;
         background-color: #D0D0D0;
-        // @media (max-width: $ipod + px) {
-        //     width: 100px;
-        // }
     }
 }
 .wait-box:last-child{
@@ -2084,6 +2081,22 @@
 }
 .wait-box:last-child .wait-box__hr{
     display: none;
+}
+.wait-onion {
+    position: absolute;
+    top: 252px;
+    left: 0;
+    @media (max-width: $ipod + px) {
+        top: 170px;
+    }
+}
+.wait-onion2 {
+    position: absolute;
+    bottom: 282px;
+    right: 0;
+    @media (max-width: $ipod + px) {
+        bottom: 170px;
+    }
 }
 
 // learn
@@ -2162,4 +2175,462 @@
 
 .saw .you-block__item {
     margin-top: 20px;
+}
+
+//==================About==============================================//
+
+.aboutVideo-video iframe{
+    width: 100%;
+    @media (max-width: $ipod + px) {
+        height: 300px;
+    }
+}
+
+// About 
+
+.about {
+    width: 100%;
+    background-color: $white;
+}
+.about-inner {
+    padding-top: 64px;
+    padding-bottom: 65px;
+    @media (max-width: $ipad + px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    @media (max-width: $ipod + px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    @media (max-width: $iphone + px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+.about-row {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    @media (max-width: $ipod + px) {
+        flex-direction: column;
+    }
+}
+.about-img {
+    width: 500px;
+    margin-right: 60px;
+    @media (max-width: 1100px) {
+        margin-right: 40px;
+    }
+    @media (max-width: $ipad + px) {
+        width: 400px;
+        margin-right: 20px;
+    }
+    @media (max-width: 890px) {
+        width: 300px;
+    }
+    @media (max-width: $ipod + px) {
+        margin: 0 auto;
+    }
+    @media (max-width: $iphone + px) {
+        width: 290px;
+    }
+}
+.about-column {
+        width: 100%;
+        @media (max-width: $ipod + px) {
+            margin-top: 20px;
+        }
+		&__name {
+		}
+
+		&__title {
+            font-family: Segoe;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 50px;
+            color: #000000;
+            @media (max-width: $iphone + px) {
+                font-size: 24px;
+            }
+		}
+
+		&__text {
+            margin-top: 37px;
+            @media (max-width: $ipad + px) {
+                margin-top: 20px;
+            }
+            @media (max-width: $iphone + px) {
+                font-size: 14px;
+            }
+		}
+}
+.about-text {
+    margin-top: 78px;
+    @media (max-width: $ipad + px) {
+        margin-top: 40px;
+    }
+    @media (max-width: $ipod + px) {
+        margin-top: 20px;
+    }
+    @media (max-width: $iphone + px) {
+        font-size: 14px;
+    }
+}
+
+// aboutAdvice
+.aboutAdvice .advice-inner{
+    padding-top: 83px;
+    padding-bottom: 83px;
+}
+.aboutAdvice .advice-title {
+    @media (max-width: $iphone + px){
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+.aboutAdvice .advice-title::after {
+    @media (max-width: $iphone + px){
+        transform: translate(10px, -28px);
+    }
+}
+.aboutAdvice-box{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @media (max-width: $iphone + px){
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+}
+.aboutAdvice-button a{
+    font-size: 16px;
+}
+.aboutAdvice-box .advice-avatar{
+    margin-top: 0;
+    @media (max-width: $iphone + px){
+        margin-bottom: 20px;
+    }
+}
+
+//==================Shop==============================================//
+
+
+// quality
+
+.quality {
+    width: 100%;
+    background-color: $white;
+}
+.quality-inner {
+    padding-top: 63px;
+    padding-bottom: 80px;
+    @media (max-width: $ipad + px){
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+    @media (max-width: $ipod + px){
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    @media (max-width: $iphone + px){
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+.quality-row {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        @media (max-width: $ipad + px){
+            flex-direction: column;
+        }
+}
+.quality-block {
+        width: 48%;
+        min-height: 200px;
+        padding: 28px 35px;
+        background: #FBF8F1;
+        border-radius: 10px;
+        display: flex;
+        align-items: flex-start;
+        @media (max-width: 1100px){
+            padding: 20px;
+        }
+        @media (max-width: $ipad + px){
+            width: 520px;
+            margin: 0 auto;
+        }
+        @media (max-width: $iphone + px){
+            width: 100%;
+            min-height: fit-content;
+        }
+}
+.quality-block:first-child{
+    @media (max-width: $ipad + px){
+        margin-bottom: 20px;
+    }
+}
+.quality-box {
+        margin-left: 25px;
+        @media (max-width: $iphone + px){
+            margin-left: 15px;
+        }
+		&__title {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            color: #000000;
+            @media (max-width: $iphone + px){
+                font-size: 18px;
+            }
+		}
+
+		&__text {
+            margin-top: 39px;
+            @media (max-width: $iphone + px){
+                margin-top: 10px;
+                font-size: 14px;
+            }
+		}
+}
+
+// Tegs
+
+.tegs {
+    width: 100%;
+    background-color: $white;
+}
+.tegs-inner {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    @media (max-width: $iphone + px){
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+.tegs-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+}
+.tegs-cards {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: $ipod + px){
+        flex-direction: column;
+    }
+}
+.tegs-card {
+        width: 360px;
+        height: 443px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 25px;
+        overflow: hidden;
+        transition: all 250ms ease;
+		&__title {
+            font-family: Segoe;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 50px;
+            color: $white;
+            @media (max-width: $iphone + px){
+                width: 24px;
+            }
+		}
+        @media (max-width: $iphone + px){
+            width: 290px;
+        }
+        @media (max-width: 400px){
+            width: 100%;
+        }
+}
+.tegs-card:hover{
+    transform: scale(1.1);
+    @media (max-width: $iphone + px){
+        transform: scale(1);
+    }
+}
+.tegs-card:nth-child(2) {
+    margin-left: 10px;
+    margin-right: 10px;
+    @media (max-width: $ipod + px){
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+.tegs-card__button{
+    margin-top: 20px;
+    @media (max-width: $iphone + px){
+        margin-top: 10px;
+    }
+}
+.cardsImg {
+    background: url('@img/shop/shop-img.png') center no-repeat;
+}
+.merchImg {
+    background: url('@img/shop/shop-img2.png') center no-repeat;
+}
+.spicesImg {
+    background: url('@img/shop/shop-img3.png') center no-repeat;
+}
+
+// chapter
+
+.chapter .intro-inner{
+    padding-top: 20px;
+}
+.chapter .intro-title span{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $red;
+}
+.chapter-row {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.chapter-item {
+        width: 32%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        @media (max-width: $ipod + px){
+            width: 47%;
+            margin-bottom: 25px;
+        }
+        @media (max-width: 490px){
+            width: 100%;
+        }
+}
+.chapter-item:nth-child(2) {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.chapter-item:nth-last-child(1),
+.chapter-item:nth-last-child(2),
+.chapter-item:nth-last-child(3) {
+    margin-bottom: 0;
+}
+.chapter-item-photo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chapter-item__img{
+    @media (max-width: $ipad + px){
+        width: 200px;
+    }
+}
+.chapter-block {
+        padding: 12px 15px;
+        background-color: #F0F0F0;
+		&__title {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 36px;
+            letter-spacing: -0.015em;
+            color: #403E3E;
+		}
+
+		&__description {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 36px;
+            letter-spacing: -0.015em;
+            color: #403E3E;
+            margin-top: 10px;
+		}
+}
+.chapter-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 1085px){
+        flex-direction: column;
+    }
+}
+.chapter-buttons__button{
+    width: 150px;
+}
+.chapter-buttons__button a{
+    font-size: 14px;
+}
+.chapter-more{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    background: #FAF7F7;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 28px;
+    color: $black;
+    cursor: pointer;
+}
+
+//==================Contacts==============================================//
+
+.contacs {
+    width: 100%;
+    background-color: $white;
+}
+.contacts-inner {
+    padding-bottom: 35px;
+    @media (max-width: $iphone + px){
+        padding-bottom: 25px;
+    }
+}
+.contacs-title {
+    font-family: Segoe;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 50px;
+    color: $black;
+    @media (max-width: $ipad + px){
+        font-size: 28px;
+    }
+    @media (max-width: $ipod + px){
+        font-size: 26px;
+    }
+}
+.contacs-text {
+    margin-top: 14px;
+    @media (max-width: $iphone + px){
+        font-size: 14px;
+        margin-top: 10px;
+    }
 }
