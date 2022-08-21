@@ -1994,75 +1994,92 @@
     align-items: flex-start;
     margin-top: 52px;
 }
+
 .wait-column {
     width: 100%;
     z-index: 2;
+
     &__text {
         min-height: 160px;
     }
 }
-.wait-row .wait-column:first-child .wait-column__text{
+
+.wait-row .wait-column:first-child .wait-column__text {
     text-align: right;
 }
+
 .wait-row .wait-column:first-child .wait-column__text:nth-child(2),
 .wait-row .wait-column:first-child .wait-column__text:nth-child(4) {
     visibility: hidden;
 }
-.wait-row .wait-column:last-child .wait-column__text{
+
+.wait-row .wait-column:last-child .wait-column__text {
     text-align: left;
 }
-.wait-column .wait-column__text:last-child{
+
+.wait-column .wait-column__text:last-child {
     min-height: auto;
 }
+
 .wait-row .wait-column:last-child .wait-column__text:nth-child(1),
 .wait-row .wait-column:last-child .wait-column__text:nth-child(3),
 .wait-row .wait-column:last-child .wait-column__text:nth-child(5) {
     visibility: hidden;
+
     @media (max-width: $ipod + px) {
         visibility: visible;
     }
 }
+
 .wait-row .wait-column:first-child {
     @media (max-width: $ipod + px) {
         display: none;
     }
 }
+
 .wait-row .wait-column:last-child .wait-column__text:nth-child(2) {
     @media (max-width: $iphone + px) {
         min-height: 220px;
     }
 }
-.wait-column__text{
+
+.wait-column__text {
     @media (max-width: $ipod + px) {
         font-size: 14px;
     }
 }
+
 .wait-count {
     z-index: 2;
     width: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
     @media (max-width: $ipod + px) {
         width: 75px;
     }
 }
+
 .wait-count .wait-count__box:nth-child(2) {
     @media (max-width: $iphone + px) {
         min-height: 220px;
     }
 }
+
 .wait-count .wait-count__box:nth-child(2) .wait-box__hr {
     @media (max-width: $iphone + px) {
         width: 159px;
         margin-top: 79px;
     }
 }
+
 .wait-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 160px;
+
     &__img {
         width: 60px;
         height: fit-content;
@@ -2076,24 +2093,30 @@
         background-color: #D0D0D0;
     }
 }
-.wait-box:last-child{
+
+.wait-box:last-child {
     min-height: auto;
 }
-.wait-box:last-child .wait-box__hr{
+
+.wait-box:last-child .wait-box__hr {
     display: none;
 }
+
 .wait-onion {
     position: absolute;
     top: 252px;
     left: 0;
+
     @media (max-width: $ipod + px) {
         top: 170px;
     }
 }
+
 .wait-onion2 {
     position: absolute;
     bottom: 282px;
     right: 0;
+
     @media (max-width: $ipod + px) {
         bottom: 170px;
     }
@@ -2179,8 +2202,9 @@
 
 //==================About==============================================//
 
-.aboutVideo-video iframe{
+.aboutVideo-video iframe {
     width: 100%;
+
     @media (max-width: $ipod + px) {
         height: 300px;
     }
@@ -2192,126 +2216,154 @@
     width: 100%;
     background-color: $white;
 }
+
 .about-inner {
     padding-top: 64px;
     padding-bottom: 65px;
+
     @media (max-width: $ipad + px) {
         padding-top: 40px;
         padding-bottom: 40px;
     }
+
     @media (max-width: $ipod + px) {
         padding-top: 30px;
         padding-bottom: 30px;
     }
+
     @media (max-width: $iphone + px) {
         padding-top: 25px;
         padding-bottom: 25px;
     }
 }
+
 .about-row {
     width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+
     @media (max-width: $ipod + px) {
         flex-direction: column;
     }
 }
+
 .about-img {
     width: 500px;
     margin-right: 60px;
+
     @media (max-width: 1100px) {
         margin-right: 40px;
     }
+
     @media (max-width: $ipad + px) {
         width: 400px;
         margin-right: 20px;
     }
+
     @media (max-width: 890px) {
         width: 300px;
     }
+
     @media (max-width: $ipod + px) {
         margin: 0 auto;
     }
+
     @media (max-width: $iphone + px) {
         width: 290px;
     }
 }
+
 .about-column {
-        width: 100%;
-        @media (max-width: $ipod + px) {
-            margin-top: 20px;
-        }
-		&__name {
-		}
+    width: 100%;
 
-		&__title {
-            font-family: Segoe;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 50px;
-            color: #000000;
-            @media (max-width: $iphone + px) {
-                font-size: 24px;
-            }
-		}
-
-		&__text {
-            margin-top: 37px;
-            @media (max-width: $ipad + px) {
-                margin-top: 20px;
-            }
-            @media (max-width: $iphone + px) {
-                font-size: 14px;
-            }
-		}
-}
-.about-text {
-    margin-top: 78px;
-    @media (max-width: $ipad + px) {
-        margin-top: 40px;
-    }
     @media (max-width: $ipod + px) {
         margin-top: 20px;
     }
+
+    &__name {}
+
+    &__title {
+        font-family: Segoe;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 50px;
+        color: #000000;
+
+        @media (max-width: $iphone + px) {
+            font-size: 24px;
+        }
+    }
+
+    &__text {
+        margin-top: 37px;
+
+        @media (max-width: $ipad + px) {
+            margin-top: 20px;
+        }
+
+        @media (max-width: $iphone + px) {
+            font-size: 14px;
+        }
+    }
+}
+
+.about-text {
+    margin-top: 78px;
+
+    @media (max-width: $ipad + px) {
+        margin-top: 40px;
+    }
+
+    @media (max-width: $ipod + px) {
+        margin-top: 20px;
+    }
+
     @media (max-width: $iphone + px) {
         font-size: 14px;
     }
 }
 
 // aboutAdvice
-.aboutAdvice .advice-inner{
+.aboutAdvice .advice-inner {
     padding-top: 83px;
     padding-bottom: 83px;
 }
+
 .aboutAdvice .advice-title {
-    @media (max-width: $iphone + px){
+    @media (max-width: $iphone + px) {
         font-size: 20px;
         line-height: 30px;
     }
 }
+
 .aboutAdvice .advice-title::after {
-    @media (max-width: $iphone + px){
+    @media (max-width: $iphone + px) {
         transform: translate(10px, -28px);
     }
 }
-.aboutAdvice-box{
+
+.aboutAdvice-box {
     margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    @media (max-width: $iphone + px){
+
+    @media (max-width: $iphone + px) {
         flex-direction: column-reverse;
         margin-top: 50px;
     }
 }
-.aboutAdvice-button a{
+
+.aboutAdvice-button a {
     font-size: 16px;
 }
-.aboutAdvice-box .advice-avatar{
+
+.aboutAdvice-box .advice-avatar {
     margin-top: 0;
-    @media (max-width: $iphone + px){
+
+    @media (max-width: $iphone + px) {
         margin-bottom: 20px;
     }
 }
@@ -2325,80 +2377,96 @@
     width: 100%;
     background-color: $white;
 }
+
 .quality-inner {
     padding-top: 63px;
     padding-bottom: 80px;
-    @media (max-width: $ipad + px){
+
+    @media (max-width: $ipad + px) {
         padding-top: 40px;
         padding-bottom: 60px;
     }
-    @media (max-width: $ipod + px){
+
+    @media (max-width: $ipod + px) {
         padding-top: 30px;
         padding-bottom: 40px;
     }
-    @media (max-width: $iphone + px){
+
+    @media (max-width: $iphone + px) {
         padding-top: 25px;
         padding-bottom: 25px;
     }
 }
+
 .quality-row {
-        width: 100%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        @media (max-width: $ipad + px){
-            flex-direction: column;
-        }
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media (max-width: $ipad + px) {
+        flex-direction: column;
+    }
 }
+
 .quality-block {
-        width: 48%;
-        min-height: 200px;
-        padding: 28px 35px;
-        background: #FBF8F1;
-        border-radius: 10px;
-        display: flex;
-        align-items: flex-start;
-        @media (max-width: 1100px){
-            padding: 20px;
-        }
-        @media (max-width: $ipad + px){
-            width: 520px;
-            margin: 0 auto;
-        }
-        @media (max-width: $iphone + px){
-            width: 100%;
-            min-height: fit-content;
-        }
+    width: 48%;
+    min-height: 200px;
+    padding: 28px 35px;
+    background: #FBF8F1;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+
+    @media (max-width: 1100px) {
+        padding: 20px;
+    }
+
+    @media (max-width: $ipad + px) {
+        width: 520px;
+        margin: 0 auto;
+    }
+
+    @media (max-width: $iphone + px) {
+        width: 100%;
+        min-height: fit-content;
+    }
 }
-.quality-block:first-child{
-    @media (max-width: $ipad + px){
+
+.quality-block:first-child {
+    @media (max-width: $ipad + px) {
         margin-bottom: 20px;
     }
 }
-.quality-box {
-        margin-left: 25px;
-        @media (max-width: $iphone + px){
-            margin-left: 15px;
-        }
-		&__title {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 28px;
-            color: #000000;
-            @media (max-width: $iphone + px){
-                font-size: 18px;
-            }
-		}
 
-		&__text {
-            margin-top: 39px;
-            @media (max-width: $iphone + px){
-                margin-top: 10px;
-                font-size: 14px;
-            }
-		}
+.quality-box {
+    margin-left: 25px;
+
+    @media (max-width: $iphone + px) {
+        margin-left: 15px;
+    }
+
+    &__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000000;
+
+        @media (max-width: $iphone + px) {
+            font-size: 18px;
+        }
+    }
+
+    &__text {
+        margin-top: 39px;
+
+        @media (max-width: $iphone + px) {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    }
 }
 
 // Tegs
@@ -2407,14 +2475,17 @@
     width: 100%;
     background-color: $white;
 }
+
 .tegs-inner {
     padding-top: 35px;
     padding-bottom: 35px;
-    @media (max-width: $iphone + px){
+
+    @media (max-width: $iphone + px) {
         padding-top: 25px;
         padding-bottom: 25px;
     }
 }
+
 .tegs-title {
     font-family: Montserrat;
     font-style: normal;
@@ -2423,81 +2494,98 @@
     line-height: 28px;
     color: #000000;
 }
+
 .tegs-cards {
     margin-top: 40px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @media (max-width: $ipod + px){
+
+    @media (max-width: $ipod + px) {
         flex-direction: column;
     }
 }
+
 .tegs-card {
-        width: 360px;
-        height: 443px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        padding: 25px;
-        overflow: hidden;
-        transition: all 250ms ease;
-		&__title {
-            font-family: Segoe;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 50px;
-            color: $white;
-            @media (max-width: $iphone + px){
-                width: 24px;
-            }
-		}
-        @media (max-width: $iphone + px){
-            width: 290px;
+    width: 360px;
+    height: 443px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 25px;
+    overflow: hidden;
+    transition: all 250ms ease;
+
+    &__title {
+        font-family: Segoe;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 50px;
+        color: $white;
+
+        @media (max-width: $iphone + px) {
+            width: 24px;
         }
-        @media (max-width: 400px){
-            width: 100%;
-        }
+    }
+
+    @media (max-width: $iphone + px) {
+        width: 290px;
+    }
+
+    @media (max-width: 400px) {
+        width: 100%;
+    }
 }
-.tegs-card:hover{
+
+.tegs-card:hover {
     transform: scale(1.1);
-    @media (max-width: $iphone + px){
+
+    @media (max-width: $iphone + px) {
         transform: scale(1);
     }
 }
+
 .tegs-card:nth-child(2) {
     margin-left: 10px;
     margin-right: 10px;
-    @media (max-width: $ipod + px){
+
+    @media (max-width: $ipod + px) {
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 10px;
         margin-bottom: 10px;
     }
 }
-.tegs-card__button{
+
+.tegs-card__button {
     margin-top: 20px;
-    @media (max-width: $iphone + px){
+
+    @media (max-width: $iphone + px) {
         margin-top: 10px;
     }
 }
+
 .cardsImg {
     background: url('@img/shop/shop-img.png') center no-repeat;
 }
+
 .merchImg {
     background: url('@img/shop/shop-img2.png') center no-repeat;
 }
+
 .spicesImg {
     background: url('@img/shop/shop-img3.png') center no-repeat;
 }
 
 // chapter
 
-.chapter .intro-inner{
+.chapter .intro-inner {
     padding-top: 20px;
 }
-.chapter .intro-title span{
+
+.chapter .intro-title span {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -2506,6 +2594,7 @@
     text-transform: uppercase;
     color: $red;
 }
+
 .chapter-row {
     margin-top: 40px;
     width: 100%;
@@ -2514,78 +2603,92 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .chapter-item {
-        width: 32%;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 15px;
-        @media (max-width: $ipod + px){
-            width: 47%;
-            margin-bottom: 25px;
-        }
-        @media (max-width: 490px){
-            width: 100%;
-        }
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+    @media (max-width: $ipod + px) {
+        width: 47%;
+        margin-bottom: 25px;
+    }
+
+    @media (max-width: 490px) {
+        width: 100%;
+    }
 }
+
 .chapter-item:nth-child(2) {
     margin-left: 10px;
     margin-right: 10px;
 }
+
 .chapter-item:nth-last-child(1),
 .chapter-item:nth-last-child(2),
 .chapter-item:nth-last-child(3) {
     margin-bottom: 0;
 }
+
 .chapter-item-photo {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.chapter-item__img{
-    @media (max-width: $ipad + px){
+
+.chapter-item__img {
+    @media (max-width: $ipad + px) {
         width: 200px;
     }
 }
-.chapter-block {
-        padding: 12px 15px;
-        background-color: #F0F0F0;
-		&__title {
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 36px;
-            letter-spacing: -0.015em;
-            color: #403E3E;
-		}
 
-		&__description {
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 36px;
-            letter-spacing: -0.015em;
-            color: #403E3E;
-            margin-top: 10px;
-		}
+.chapter-block {
+    padding: 12px 15px;
+    background-color: #F0F0F0;
+
+    &__title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 36px;
+        letter-spacing: -0.015em;
+        color: #403E3E;
+    }
+
+    &__description {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 36px;
+        letter-spacing: -0.015em;
+        color: #403E3E;
+        margin-top: 10px;
+    }
 }
+
 .chapter-buttons {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @media (max-width: 1085px){
+
+    @media (max-width: 1085px) {
         flex-direction: column;
     }
 }
-.chapter-buttons__button{
+
+.chapter-buttons__button {
     width: 150px;
 }
-.chapter-buttons__button a{
+
+.chapter-buttons__button a {
     font-size: 14px;
 }
-.chapter-more{
+
+.chapter-more {
     width: 100%;
     height: 40px;
     display: flex;
@@ -2607,12 +2710,15 @@
     width: 100%;
     background-color: $white;
 }
+
 .contacts-inner {
     padding-bottom: 35px;
-    @media (max-width: $iphone + px){
+
+    @media (max-width: $iphone + px) {
         padding-bottom: 25px;
     }
 }
+
 .contacs-title {
     font-family: Segoe;
     font-style: normal;
@@ -2620,17 +2726,1600 @@
     font-size: 32px;
     line-height: 50px;
     color: $black;
-    @media (max-width: $ipad + px){
+
+    @media (max-width: $ipad + px) {
         font-size: 28px;
     }
-    @media (max-width: $ipod + px){
+
+    @media (max-width: $ipod + px) {
         font-size: 26px;
     }
 }
+
 .contacs-text {
     margin-top: 14px;
-    @media (max-width: $iphone + px){
+
+    @media (max-width: $iphone + px) {
         font-size: 14px;
         margin-top: 10px;
+    }
+}
+
+//==================Card==============================================//
+
+.card {
+    width: 100%;
+    background-color: $white;
+}
+
+.card-row {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+
+    @media (max-width: $ipod + px) {
+        flex-direction: column;
+    }
+}
+
+.card-item {
+    width: 560px;
+    margin-right: 40px;
+
+    @media (max-width: $ipad + px) {
+        margin-right: 20px;
+        width: 500px;
+    }
+
+    @media (max-width: 830px) {
+        width: 460px;
+    }
+
+    @media (max-width: $ipod + px) {
+        width: 100%;
+    }
+}
+
+.card-item-swiper {
+    width: 100%;
+}
+
+.card-item-swiper .swiper-slide {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+}
+
+.card-item-swiper .swiper-slide .card-item__slide {
+    @media (max-width: $iphone + px) {
+        width: 350px;
+    }
+
+    @media (max-width: 424px) {
+        width: 270px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.card-item-small {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.card-item-small .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-item-small .swiper-slide .card-item__slide {
+    width: 120px;
+}
+
+.card-info {
+    @media (max-width: $ipod + px) {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    &__name {
+        font-family: Segoe;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 50px;
+        color: $black;
+
+        @media (max-width: $ipad + px) {
+            font-size: 18px;
+        }
+
+        @media (max-width: $ipod + px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: $iphone + px) {
+            font-size: 14px;
+        }
+    }
+
+    &__description {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: $black;
+
+        @media (max-width: $iphone + px) {
+            font-size: 14px;
+        }
+    }
+}
+
+.card-info__cost {
+    display: block;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: $black;
+    margin-top: 50px;
+
+    @media (max-width: $ipad + px) {
+        margin-top: 33px;
+    }
+
+    @media (max-width: $iphone + px) {
+        font-size: 14px;
+    }
+}
+
+.card-sizes {
+    margin-top: 63px;
+
+    @media (max-width: $ipad + px) {
+        margin-top: 43px;
+    }
+
+    @media (max-width: $ipod + px) {
+        margin-top: 33px;
+    }
+
+    @media (max-width: $iphone + px) {
+        margin-top: 23px;
+    }
+
+    &__text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: $black;
+    }
+
+    &__box {
+        margin-top: 15px;
+    }
+}
+
+.card-info__select .select-wrapper {
+    position: relative;
+}
+
+.card-info__select .select-main {
+    width: 249px;
+    background: #F3F3F3;
+    border-radius: 5px;
+    height: 36px;
+    cursor: pointer;
+    text-align: left;
+    position: relative;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: $black;
+    padding: 4px 14px;
+
+    @media (max-width: 424px) {
+        width: 100%;
+    }
+}
+
+.card-info__select .select-main:after {
+    content: '\f0d7';
+    font-family: fontAwesome;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.card-info__select .select-main:focus,
+.card-info__select .select-main.active {
+    outline: none;
+}
+
+.card-info__select .select-menu {
+    width: 249px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    max-height: 200px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    z-index: 10;
+
+    @media (max-width: 424px) {
+        width: 100%;
+    }
+}
+
+.card-info__select .select-menu.active {
+    display: flex;
+}
+
+.card-info__select .select-menu__button {
+    background-color: white;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    transition: all 250ms ease-in;
+    border-bottom: 1px solid #ccc;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: $black;
+}
+
+.card-info__select .select-menu__button:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.card-info__select .select-menu__button:last-child {
+    border-bottom: none;
+}
+
+.quantity-block {
+    margin-top: 75px;
+
+    @media (max-width: $ipad + px) {
+        margin-top: 43px;
+    }
+
+    @media (max-width: $ipod + px) {
+        margin-top: 33px;
+    }
+
+    @media (max-width: $iphone + px) {
+        margin-top: 23px;
+    }
+}
+
+.quantity-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: $black;
+
+    @media (max-width: $iphone + px) {
+        font-size: 16px;
+    }
+}
+
+.card-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+
+    @media (max-width: $ipad + px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    @media (max-width: $ipod + px) {
+        width: 100%;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+}
+
+.card-button {
+    width: 160px;
+    height: 48px;
+    margin-right: 10px;
+
+    @media (max-width: $ipad + px) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: $ipod + px) {
+        width: 500px;
+    }
+
+    @media (max-width: $iphone + px) {
+        width: 290px;
+    }
+}
+
+.card-button:last-child {
+    margin-right: 0;
+}
+
+//==================catalogRecipes==============================================//
+
+
+.catalogRecipes .intro-inner {
+    padding-top: 100px;
+
+    @media (max-width: $ipad + px) {
+        padding-top: 70px;
+    }
+}
+
+//==================FAQ==============================================//
+
+.faq {
+    width: 100%;
+    background-color: $white;
+}
+
+.faq-spoiler .spoiler {}
+
+.faq-spoiler .spoiler-wrapper {
+    width: 100%;
+}
+
+.faq-spoiler .spoiler-title {
+    background: #F4F1F1;
+    border: none;
+    border-radius: 10px;
+    height: 70px;
+
+    @media (max-width: $iphone + px) {
+        height: auto;
+    }
+
+    &__text {
+        font-family: Segoe;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        color: #000000;
+        text-transform: none;
+
+        @media (max-width: $iphone + px) {
+            font-size: 14px;
+        }
+    }
+}
+
+.faq-spoiler .spoiler-title__plus {
+    min-width: 45px;
+    height: 45px;
+    background-color: $white;
+    border-radius: 50px;
+    margin-left: 15px;
+    background: url('@img/plus.svg') white center no-repeat;
+}
+
+.faq-spoiler .spoiler-title__plus.addMinus {
+    min-width: 45px;
+    height: 45px;
+    background-color: $white;
+    border-radius: 50px;
+    margin-left: 15px;
+    background: url('@img/minus.svg') white center no-repeat;
+}
+
+.faq-spoiler .spoiler-content {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #F4F1F1;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+//==================catalogRecipes==============================================//
+
+.catalogRecipes-row {
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: $ipod + px) {
+        margin-top: 20px;
+    }
+}
+
+.catalogRecipes-item {
+    width: 32%;
+    margin-bottom: 49px;
+
+    @media (max-width: $ipad + px) {
+        width: 49%;
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: $iphone + px) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
+
+.catalogRecipes-item:nth-last-child(1),
+.catalogRecipes-item:nth-last-child(2),
+.catalogRecipes-item:nth-last-child(3) {
+    margin-bottom: 0;
+
+    @media (max-width: $ipad + px) {
+        margin-bottom: 30px;
+    }
+}
+
+.catalogRecipes-item:last-child {
+    @media (max-width: $ipad + px) {
+        margin-bottom: 0;
+    }
+}
+
+.catalogRecipes-block {
+    width: 100%;
+    padding: 18px 16px;
+    min-height: 226px;
+    background-color: #FBF8F1;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: $ipad + px) {
+        padding: 15px;
+    }
+
+    @media (max-width: $iphone + px) {
+        min-height: auto;
+    }
+
+    &__title {
+        font-family: Segoe;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 50px;
+        color: $black;
+
+        @media (max-width: $ipad + px) {
+            font-size: 20px;
+            line-height: 34px;
+        }
+    }
+
+    &__description {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        color: #403E3E;
+        margin-top: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+
+        @media (max-width: $ipod + px) {
+            font-size: 14px;
+        }
+    }
+
+    &__icons {
+        margin-top: 27px;
+        border-top: 1px solid #A8A8A8;
+    }
+}
+
+.catalogRecipes-icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 13px;
+    margin-top: auto;
+
+    @media (max-width: $iphone + px) {
+        margin-top: 13px;
+    }
+
+    &__eye {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__eye-img {
+        margin-right: 10px;
+    }
+
+    &__eye-text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #403E3E;
+    }
+}
+
+.catalogRecipes-icons-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__comments {
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    &__comments-img {
+        margin-right: 10px;
+    }
+
+    &__comments-text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #403E3E;
+    }
+
+    &__likes {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__likes-img {
+        margin-right: 10px;
+    }
+
+    &__likes-text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #403E3E;
+    }
+}
+
+//==================Recipe==============================================//
+
+.recipe {
+    width: 100%;
+    background-color: $white;
+}
+
+.recipe-row {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+
+    @media (max-width: $ipad + px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.recipe-photo {
+    margin-right: 40px;
+
+    @media (max-width: 1100px) {
+        margin-right: 20px;
+    }
+
+    @media (max-width: $ipad + px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: $iphone + px) {
+        margin-bottom: 12px;
+    }
+}
+
+.recipe-img {
+    width: 460px;
+
+    @media (max-width: $ipad + px) {
+        width: 520px;
+    }
+
+    @media (max-width: $iphone + px) {
+        width: 100%;
+    }
+}
+
+.recipe-info {
+    width: 100%;
+
+    &__name {
+        font-family: Segoe;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 50px;
+        color: $black;
+    }
+
+    &__text {
+        margin-top: 6px;
+        font-size: 14px;
+    }
+}
+
+.recipe-box {
+    margin-top: 18px;
+
+    &__name {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 150%;
+        color: $black;
+    }
+
+    &__text {
+        font-size: 14px;
+    }
+}
+
+.recipeCook {
+    width: 100%;
+    background-color: $white;
+}
+
+.recipeCook-inner {
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+    @media (max-width: $ipad + px) {
+        padding-bottom: 40px;
+    }
+
+    @media (max-width: $ipod + px) {
+        padding-bottom: 30px;
+    }
+
+    @media (max-width: $iphone + px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+.recipeCook-title {
+    text-align: center;
+
+    @media (max-width: $iphone + px) {
+        font-size: 26px;
+        line-height: 34px;
+    }
+}
+
+.recipeCook-row {
+    margin-top: 39px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: $ipod + px) {
+        margin-top: 30px;
+    }
+
+    @media (max-width: $iphone + px) {
+        margin-top: 20px;
+    }
+}
+
+.recipeCook-item {
+    width: 32%;
+    margin-top: 52px;
+
+    @media (max-width: $ipad + px) {
+        margin-top: 35px;
+    }
+
+    @media (max-width: $ipod + px) {
+        margin-top: 20px;
+        width: 48%;
+    }
+
+    @media (max-width: $iphone + px) {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__content {
+        min-height: 170px;
+        padding: 8px 20px;
+        background: #FBF8F1;
+
+        @media (max-width: $ipad + px) {
+            min-height: 200px;
+            padding: 8px 12px;
+        }
+
+        @media (max-width: $ipod + px) {
+            min-height: 170px;
+        }
+
+        @media (max-width: $iphone + px) {
+            min-height: auto;
+        }
+    }
+
+    &__content-title {
+        font-family: Segoe;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 50px;
+        color: $black;
+    }
+
+    &__content-text {
+        padding-top: 5px;
+        border-top: 1px solid #CDCDCD;
+
+        @media (max-width: $ipod + px) {
+            font-size: 14px;
+        }
+    }
+}
+
+.recipeCook-item:nth-child(1),
+.recipeCook-item:nth-child(2),
+.recipeCook-item:nth-child(3) {
+    margin-top: 0;
+
+    @media (max-width: $ipod + px) {
+        margin-top: 20px;
+    }
+
+}
+
+.recipeCook-item:nth-child(1),
+.recipeCook-item:nth-child(2) {
+    @media (max-width: $ipod + px) {
+        margin-top: 0;
+    }
+}
+
+.recipeCook-item:nth-child(2) {
+    @media (max-width: $iphone + px) {
+        margin-top: 15px;
+    }
+}
+
+.recipeCook-item:nth-child(1) {
+    @media (max-width: $iphone + px) {
+        margin-top: 0;
+    }
+}
+
+.recipeVideoCook {
+    width: 100%;
+    background-color: $white;
+}
+
+.recipeVideoCook-inner {
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+    @media (max-width: $ipad + px) {
+        padding-top: 40px;
+    }
+
+    @media (max-width: $ipod + px) {
+        padding-top: 30px;
+    }
+
+    @media (max-width: $iphone + px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+.recipeVideoCook-title {
+    text-align: center;
+}
+
+.recipeVideoCook-video {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipeVideoCook-video iframe {
+    @media (max-width: $iphone + px) {
+        height: 220px;
+    }
+}
+
+.recipeVideoCook-form {
+    margin-top: 61px;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 38px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #9F9F9F;
+
+    @media (max-width: $ipod + px) {
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    @media (max-width: $iphone + px) {
+        border: none;
+        padding: 0;
+        margin-top: 20px;
+    }
+}
+
+.recipeVideoCook-block {
+    @media (max-width: $ipod + px) {
+        width: 100%;
+    }
+
+    &__title {
+        display: block;
+        font-family: Segoe;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 50px;
+        color: #35414D;
+    }
+}
+
+.recipeVideoCook-box {
+    margin-top: 19px;
+    background: #FBF8F1;
+    border-radius: 10px;
+    padding: 24px 43px;
+    width: 600px;
+
+    @media (max-width: $ipod + px) {
+        width: 100%;
+    }
+
+    @media (max-width: $iphone + px) {
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    &__top {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+
+        @media (max-width: $iphone + px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__top-img {
+        margin-right: 16px;
+    }
+
+    &__top-textarea {
+        width: 100%;
+        padding: 10px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 130%;
+        height: 108px;
+        color: #ABABAB;
+
+        @media (max-width: $iphone + px) {
+            margin-top: 15px;
+        }
+    }
+
+    &__top-textarea::placeholder {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 130%;
+        color: #ABABAB;
+    }
+
+    &__button {
+        margin-left: auto;
+        margin-top: 18px;
+
+        @media (max-width: $iphone + px) {
+            margin: 0 auto;
+            margin-top: 15px;
+        }
+    }
+}
+
+.recipeInteresting {
+    width: 100%;
+    background-color: $white;
+}
+
+.recipeInteresting-inner {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media (max-width: $ipod + px) {
+        padding-top: 33px;
+        padding-bottom: 33px;
+    }
+
+    @media (max-width: $iphone + px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+.recipeInteresting-title {
+    text-align: left;
+
+    @media (max-width: $iphone + px) {
+        font-size: 24px;
+        line-height: 34px;
+    }
+}
+
+.recipeInteresting-row {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 59px;
+
+    @media (max-width: $ipod + px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.recipeInteresting-item {
+    width: 32%;
+
+    @media (max-width: $ipod + px) {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: $iphone + px) {
+        width: 100%;
+    }
+}
+
+.recipeInteresting-item:last-child {
+    @media (max-width: $ipod + px) {
+        margin-bottom: 0px;
+    }
+}
+
+.recipeInteresting-item-photo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipeInteresting-content {
+    width: 100%;
+    padding: 16px 12px;
+    background: #F0F0F0;
+    min-height: 286px;
+
+    @media (max-width: $ipod + px) {
+        min-height: auto;
+    }
+
+    &__title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 36px;
+        letter-spacing: -0.015em;
+        color: #403E3E;
+    }
+
+    &__box {
+        margin-top: 9px;
+    }
+
+    &__text {
+        @media (max-width: $iphone + px) {
+            font-size: 14px;
+        }
+    }
+
+    &__description {
+        margin-top: 70px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: $black;
+
+        @media (max-width: $ipad + px) {
+            margin-top: 40px;
+        }
+    }
+}
+
+.recipeInteresting-bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 26px;
+
+    @media (max-width: 1140px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media (max-width: $iphone + px) {
+        margin-top: 15px;
+    }
+
+    &__more {
+        width: 148px;
+        height: 33px;
+        border: 1px solid #D56359;
+        border-radius: 50px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 36px;
+        letter-spacing: -0.015em;
+        color: #666666;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: 424px) {
+            width: 100%;
+        }
+    }
+
+    &__youtube {
+        display: flex;
+        align-items: center;
+    }
+
+    &__youtube-text {
+        font-size: 13px;
+        margin-right: 10px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 36px;
+        letter-spacing: -0.015em;
+        color: #403E3E;
+    }
+}
+
+// Talk
+
+.talk-title.catalogRecipes-block__title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    width: 100%;
+    line-height: 26px;
+    font-size: 18px;
+}
+
+.talk-icons .catalogRecipes-icons-row__comments {
+    margin-left: 23px;
+}
+
+.talk-continue {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.015em;
+    color: $red;
+    margin-top: 13px;
+    margin-bottom: 13px;
+
+    @media (max-width: $iphone + px) {
+        margin-bottom: 0px;
+    }
+}
+
+//==================Article==============================================//
+
+.article {
+    width: 100%;
+    background-color: $white;
+}
+
+.article-row {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+
+    @media (max-width: $ipad + px) {
+        flex-direction: column;
+    }
+}
+
+.article-slider {
+    display: flex;
+    align-items: center;
+    margin-right: 41px;
+
+    @media (max-width: 1100px) {
+        margin-right: 20px;
+    }
+
+    @media (max-width: $ipad + px) {
+        align-items: flex-start;
+        justify-content: center;
+        margin-right: 0;
+        margin: 0 auto;
+        width: 468px;
+    }
+
+    @media (max-width: $iphone + px) {
+        width: 300px;
+    }
+}
+
+.article-small {
+    margin-right: 7px;
+}
+
+.article-slider-small {
+    width: 108px;
+    height: 535px;
+
+    @media (max-width: $ipad + px) {
+        height: 445px;
+    }
+
+    @media (max-width: $iphone + px) {
+        height: 200px;
+        width: 50px;
+    }
+}
+
+.article-slider-small .swiper-slide .article-slider-small__img {
+    @media (max-width: $iphone + px) {
+        height: 100%;
+    }
+}
+
+.article-big {
+    width: 425px;
+
+    @media (max-width: $iphone + px) {
+        width: 158px;
+    }
+}
+
+.article-slider-big {
+    height: 535px;
+
+    @media (max-width: $ipad + px) {
+        height: 445px;
+    }
+
+    @media (max-width: $iphone + px) {
+        height: 200px;
+    }
+}
+
+.article-slider-big .swiper-slide .article-slider-big__img {
+    width: 100%;
+
+    @media (max-width: $iphone + px) {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.article-info {
+    width: 100%;
+
+    @media (max-width: $ipad + px) {
+        margin-top: 20px;
+    }
+
+    &__date {
+        display: block;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 36px;
+        letter-spacing: -0.015em;
+        color: #989898;
+
+        @media (max-width: $iphone + px) {
+            font-size: 14px;
+        }
+    }
+
+    &__title {
+        font-family: Segoe;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 34px;
+        color: #000000;
+        margin-top: 6px;
+
+        @media (max-width: $iphone + px) {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        margin-top: 18px;
+
+        @media (max-width: $iphone + px) {
+            font-size: 14px;
+        }
+    }
+}
+
+.article-text {
+    font-size: 16px;
+    margin-top: 67px;
+
+    @media (max-width: $ipod + px) {
+        margin-top: 20px;
+    }
+
+    @media (max-width: $iphone + px) {
+        font-size: 14px;
+    }
+}
+
+//==================Registration==============================================//
+
+.reg {
+    width: 100%;
+    background-color: $white;
+    border-bottom: 1px solid rgb(227, 227, 227);
+}
+
+.reg-inner {
+    padding-bottom: 173px;
+    @media (max-width: $ipad + px) {
+        padding-bottom: 123px;
+    }
+    @media (max-width: $ipod + px) {
+        padding-bottom: 83px;
+    }
+    @media (max-width: $iphone + px) {
+        padding-bottom: 43px;
+    }
+}
+
+.reg-row {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    @media (max-width: 880px) {
+        justify-content: space-between;
+    }
+    @media (max-width: $ipod + px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.reg-left {
+    width: 400px;
+    padding: 42px 34px;
+    background: #FEFEFE;
+    border: 1px solid #D8D8D8;
+    border-radius: 20px;
+    @media (max-width: 880px) {
+        padding: 25px;
+        width: 47%;
+    }
+    @media (max-width: $ipod + px) {
+        width: 400px;
+    }
+    @media (max-width: 470px) {
+        width: 100%;
+        padding: 15px;
+    }
+    &__title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+        color: #262626;
+        @media (max-width: 470px) {
+            font-size: 15px;
+        }
+    }
+}
+
+.reg-buttons {
+    margin-top: 13px;
+    display: flex;
+    flex-direction: column;
+
+    &__button {
+        width: 100%;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+        color: #262626;
+        margin-bottom: 11px;
+        @media (max-width: 470px) {
+            font-size: 14px;
+            height: 45px;
+        }
+    }
+
+    &__button:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.reg-info {
+    margin-top: 51px;
+    @media (max-width: 470px) {
+        margin-top: 20px;
+    }
+    &__title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+        color: #262626;
+        @media (max-width: 470px) {
+            font-size: 15px;
+        }
+    }
+
+    &__text {
+        display: block;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        color: #4F4F4F;
+        position: relative;
+        padding-left: 7px;
+    }
+
+    &__text:before {
+        content: '';
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: #4F4F4F;
+        position: absolute;
+        top: 14px;
+        left: 0px;
+    }
+}
+.reg-right{
+    @media (max-width: 880px) {
+        width: 47%;
+    }
+    @media (max-width: $ipod + px) {
+        width: 400px;
+    }
+    @media (max-width: 470px) {
+        width: 100%;
+    }
+}
+.reg-form {
+    width: 410px;
+    margin-left: 143px;
+    @media (max-width: $ipad + px) {
+        margin-left: 75px;
+    }
+    @media (max-width: 880px) {
+        margin-left: 0px;
+        width: 100%;
+    }
+    @media (max-width: $ipod + px) {
+        width: 100%;
+        margin-top: 20px;
+    }
+    &__box {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    &__box:last-child {
+        margin-bottom: 0;
+    }
+    .reg-box__text{
+        @media (max-width: 470px) {
+            font-size: 14px;
+        }
+    }
+    .input {
+        width: 100%;
+        margin-top: 5px;
+        color: $black;
+        @media (max-width: 470px) {
+            height: 45px;
+        }
+    }
+    &__row {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__row-link {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        text-decoration-line: underline;
+        color: $red;
+        @media (max-width: 470px) {
+            font-size: 14px;
+        }
+    }
+    &__row-link:first-child{
+        text-decoration-line: underline;
+        color: $black;
+    }
+
+    &__button {
+        margin-top: 33px;
+        width: 100%;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+        color: #262626;
+        @media (max-width: 880px) {
+            margin-top: 15px;
+        }
+        @media (max-width: 470px) {
+            height: 45px;
+            font-size: 14px;
+        }
+    }
+}
+.reg-checkboxes {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 880px) {
+        margin-top: 15px;
+    }
+}
+.reg-checkboxes .checkbox .checkbox__label:after{
+    @media (max-width: 880px) {
+        top: 5px;
+        left: 1.5px;
+    }
+    @media (max-width: $ipod + px) {
+        top: 4.5px;
+        left: 2px;
+    }
+    @media (max-width: 470px) {
+        left: 1.5px;
+    }
+}
+
+.reg-enter {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 25px;
+    @media (max-width: 880px) {
+        margin-top: 15px;
+    }
+    &__text {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: #4F4F4F;
+    }
+
+    &__icons {
+        display: flex;
+        align-items: center;
+        margin-top: 13px;
+    }
+
+    &__icons  a {
+        margin-right: 15px;
+    }
+    &__icons  a:last-child {
+        margin-right: 0px;
     }
 }

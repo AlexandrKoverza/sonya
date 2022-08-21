@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{ "title":"Recipe" })
+
+<body>
+    <main class="wrapper max-width">
+        @@include('html/header.html',{})
+        <section class="breadCrumbs">
+            <div class="container">
+                <div class="breadCrumbs-links">
+                    <a href="index.html" class="breadCrumbs-links__link">Главная / </a>
+                    <a href="catalogRecipes.html" class="breadCrumbs-links__link">Рецепты / </a>
+                    <span class="breadCrumbs-links__text">Рецепт</span>
+                </div>
+            </div>
+        </section>
+        <section class="recipe">
+            <div class="container">
+                <div class="recipe-inner">
+                    <div class="recipe-row">
+                        <div class="recipe-photo">
+                            <img src="@img/recipe/recipe-photo.png" alt="image" class="recipe-img">
+                        </div>
+                        <div class="recipe-info">
+                            <span class="recipe-info__name">Оссобуко
+                            </span>
+                            <p class="recipe-info__text text">Многие хозяйки боятся или не хотят готовить мясо. Вдруг
+                                будет жесткое? Какой кусок купить? Как правильно добавить специи? и еще миллион
+                                причин...
+                                Я покажу вам беспроигрышный вариант. Просто для домашнего ужина, и совсем не зазорно
+                                подать к столу.
+
+                            </p>
+                            <div class="recipe-info-box recipe-box">
+                                <span class="recipe-box__name">Ингредиенты:</span>
+                                <p class="recipe-box__text text"> 1. Нам нужен кусок Оссобуко. Это такой кусочек с
+                                    большой трубной костью посередине. Но вполне можно заменить и Асадо, и лопаткой.</p>
+                                <p class="recipe-box__text text"> 2. Соус Барбекю. Я люблю использовать 2 вида:
+                                    классический и острый</p>
+                                <p class="recipe-box__text text"> 3. По желанию чеснок и пряные травы</p>
+                            </div>
+
+                            <div class="recipe-info-box recipe-box">
+                                <span class="recipe-box__name">Инструменты:
+                                </span>
+                                <p class="recipe-box__text text">1. Перчатки
+                                </p>
+                                <p class="recipe-box__text text">2. Бумага для запекания
+                                </p>
+                                <p class="recipe-box__text text">3. Фольга
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="recipeCook">
+            <div class="container">
+                <div class="recipeCook-inner">
+                    <h3 class="recipeCook-title title">Как приготовить</h3>
+                    <div class="recipeCook-row">
+                        <div class="recipeCook-row__item recipeCook-item">
+                            <img src="@img/recipe/recipe-img.png" alt="image" class="recipeCook-item__img">
+                            <div class="recipeCook-item__content">
+                                <span class="recipeCook-item__content-title">Шаг 1/5</span>
+                                <p class="recipeCook-item__content-text text">
+                                    Для начала подготовим все ингредиенты
+                                </p>
+                            </div>
+                        </div>
+                        <div class="recipeCook-row__item recipeCook-item">
+                            <img src="@img/recipe/recipe-img2.png" alt="image" class="recipeCook-item__img">
+                            <div class="recipeCook-item__content">
+                                <span class="recipeCook-item__content-title">Шаг 2/5</span>
+                                <p class="recipeCook-item__content-text text">
+                                    Кусок мяса щедро обмазываем соусом. При желании добавляем чеснок и травы
+                                </p>
+                            </div>
+                        </div>
+                        <div class="recipeCook-row__item recipeCook-item">
+                            <img src="@img/recipe/recipe-img3.png" alt="image" class="recipeCook-item__img">
+                            <div class="recipeCook-item__content">
+                                <span class="recipeCook-item__content-title">Шаг 3/5</span>
+                                <p class="recipeCook-item__content-text text">
+                                    Заворачиваем в 3-4 слоя бумаги для выпечки
+                                </p>
+                            </div>
+                        </div>
+                        <div class="recipeCook-row__item recipeCook-item">
+                            <img src="@img/recipe/recipe-img4.png" alt="image" class="recipeCook-item__img">
+                            <div class="recipeCook-item__content">
+                                <span class="recipeCook-item__content-title">Шаг 4/5</span>
+                                <p class="recipeCook-item__content-text text">
+                                    Затем заворачиваем в 3-4 слоя фольги. Ставим в духовку на 4-5 часов при температуре
+                                    100-120 градусов
+                                </p>
+                            </div>
+                        </div>
+                        <div class="recipeCook-row__item recipeCook-item">
+                            <img src="@img/recipe/recipe-img5.png" alt="image" class="recipeCook-item__img">
+                            <div class="recipeCook-item__content">
+                                <span class="recipeCook-item__content-title">Шаг 5/5</span>
+                                <p class="recipeCook-item__content-text text">
+                                    Вытаскиваем из духовки, раскрываем фольгу и бумагу и наслаждаемся нежнейшим
+                                    ароматным мясом
+                                </p>
+                            </div>
+                        </div>
+                        <div class="recipeCook-row__item recipeCook-item">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="recipeVideoCook">
+            <div class="container">
+                <div class="recipeVideoCook-inner">
+                    <h3 class="recipeVideoCook-title title">Видеорецепт</h3>
+                    <div class="recipeVideoCook-video">
+                        <iframe width="600" height="400" src="https://www.youtube.com/embed/ZpY7FikDxT0?controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <form class="recipeVideoCook-form">
+                        <div class="recipeVideoCook-form__block recipeVideoCook-block">
+                            <span class="recipeVideoCook-block__title">Как вам рецепт?</span>
+                            <div class="recipeVideoCook-block__box recipeVideoCook-box">
+                                <div class="recipeVideoCook-box__top">
+                                    <img src="@img/recipe/recipe-icon.png" alt="image"
+                                        class="recipeVideoCook-box__top-img">
+                                    <textarea class="recipeVideoCook-box__top-textarea"
+                                        placeholder="текст вашего сообщения..."></textarea>
+                                </div>
+                                <button type="submit" class="recipeVideoCook-box__button button1">
+                                    <a href="">Отправить</a>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="recipeInteresting">
+            <div class="container">
+                <div class="recipeInteresting-inner">
+                    <h3 class="recipeInteresting-title title">Также, вам может быть интересно</h3>
+                    <div class="recipeInteresting-row">
+                        <div class="recipeInteresting-row__item recipeInteresting-item">
+                            <div class="recipeInteresting-item-photo">
+                                <img src="@img/recipe/recipe-img6.png" alt="image" class="recipeInteresting-item__img">
+                            </div>
+                            <div class="recipeInteresting-item__content recipeInteresting-content">
+                                <span class="recipeInteresting-content__title">Название рецепта</span>
+                                <div class="recipeInteresting-content__box">
+                                    <span class="recipeInteresting-content__text text">Состав:</span>
+                                    <p class="recipeInteresting-content__text text"></p>
+                                </div>
+                                <p class="recipeInteresting-content__description">Описание
+                                    Ваши домашние и гости скажут: "Так это же очень просто!!! Но почему так вкусно?
+                                </p>
+                                <div class="recipeInteresting-bottom">
+                                    <a href="" class="recipeInteresting-bottom__more">Читать полностью</a>
+                                    <div class="recipeInteresting-bottom__youtube">
+                                        <a href="" class="recipeInteresting-bottom__youtube-text">Смотреть на ЮТУБ</a>
+                                        <img src="@img/recipe/recipe-youtube.png" alt="image"
+                                            class="recipeInteresting-bottom__youtube-img">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="recipeInteresting-row__item recipeInteresting-item">
+                            <div class="recipeInteresting-item-photo">
+                                <img src="@img/recipe/recipe-img6.png" alt="image" class="recipeInteresting-item__img">
+                            </div>
+                            <div class="recipeInteresting-item__content recipeInteresting-content">
+                                <span class="recipeInteresting-content__title">Название рецепта</span>
+                                <div class="recipeInteresting-content__box">
+                                    <span class="recipeInteresting-content__text text">Состав:</span>
+                                    <p class="recipeInteresting-content__text text"></p>
+                                </div>
+                                <p class="recipeInteresting-content__description">Описание
+                                    Ваши домашние и гости скажут: "Так это же очень просто!!! Но почему так вкусно?
+                                </p>
+                                <div class="recipeInteresting-bottom">
+                                    <a href="" class="recipeInteresting-bottom__more">Читать полностью</a>
+                                    <div class="recipeInteresting-bottom__youtube">
+                                        <a href="" class="recipeInteresting-bottom__youtube-text">Смотреть на ЮТУБ</a>
+                                        <img src="@img/recipe/recipe-youtube.png" alt="image"
+                                            class="recipeInteresting-bottom__youtube-img">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="recipeInteresting-row__item recipeInteresting-item">
+                            <div class="recipeInteresting-item-photo">
+                                <img src="@img/recipe/recipe-img6.png" alt="image" class="recipeInteresting-item__img">
+                            </div>
+                            <div class="recipeInteresting-item__content recipeInteresting-content">
+                                <span class="recipeInteresting-content__title">Название рецепта</span>
+                                <div class="recipeInteresting-content__box">
+                                    <span class="recipeInteresting-content__text text">Состав:</span>
+                                    <p class="recipeInteresting-content__text text"></p>
+                                </div>
+                                <p class="recipeInteresting-content__description">Описание
+                                    Ваши домашние и гости скажут: "Так это же очень просто!!! Но почему так вкусно?
+                                </p>
+                                <div class="recipeInteresting-bottom">
+                                    <a href="" class="recipeInteresting-bottom__more">Читать полностью</a>
+                                    <div class="recipeInteresting-bottom__youtube">
+                                        <a href="" class="recipeInteresting-bottom__youtube-text">Смотреть на ЮТУБ</a>
+                                        <img src="@img/recipe/recipe-youtube.png" alt="image"
+                                            class="recipeInteresting-bottom__youtube-img">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="recommendation">
+            <div class="container">
+                <div class="recommendation-inner">
+                    <div class="recommendation-title">Тетя Соня рекомендует</div>
+                    <div class="recommendation-row">
+                        <div class="recommendation-block">
+                            <a href="" class="recommendation-block__bg">
+                                <div class="recommendation-block__box">
+                                    <div class="recommendation-block__text">У тети Сони</div>
+                                    <div class="recommendation-block__icon"></div>
+                                </div>
+                                <button class="recommendation-block__button button3">Подписывайся</button>
+                            </a>
+                            <span class="recommendation-block__name">Мой канал на YOUTUBE</span>
+                        </div>
+                        <a href="" class="recommendation-block">
+                            <img src="@img/home/recommendation-img.png" alt="image" class="recommendation-block__img">
+                            <span class="recommendation-block__name">Мой канал на YOUTUBE</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="questions big-img bg5">
+            <div class="container">
+                <div class="questions-inner">
+                    <form class="questions-form">
+                        <h4 class="questions-form__title">Остались вопросы?</h4>
+                        <p class="questions-form__text">Напишите мне, и я помогу</p>
+                        <div class="questions-form__inputs">
+                            <input type="text" class="questions-form__input" placeholder="Как вас зовут?">
+                            <input type="email" class="questions-form__input" placeholder="Ваш E-mail">
+                        </div>
+                        <textarea placeholder="Ваш вопрос" class="questions-form__textarea"></textarea>
+                        <button type="submit" class="questions-form__button button1">
+                            <a href="">Отправить</a>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <a href="#header" class="toTop">
+            <img src="@img/arrow-up.png" alt="image">
+        </a>
+        @@include('html/footer.html',{})
+    </main>
+    @@include('html/script.html',{})
+</body>
+
+</html>

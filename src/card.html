@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{ "title":"Card" })
+
+<body>
+    <main class="wrapper max-width">
+        @@include('html/header.html',{})
+        <section class="breadCrumbs">
+            <div class="container">
+                <div class="breadCrumbs-links">
+                    <a href="index.html" class="breadCrumbs-links__link">Главная / </a>
+                    <a href="shop.html" class="breadCrumbs-links__link">Магазин / </a>
+                    <a href="chapter.html" class="breadCrumbs-links__link">Раздел / </a>
+                    <span class="breadCrumbs-links__text">Товар</span>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <div class="container">
+                <div class="card-inner">
+                    <div class="card-row">
+                        <div class="card-item">
+                            <div class="card-item-swiper swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="@img/slider-slide.png" alt="image" class="card-item__slide">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="@img/slider-slide.png" alt="image" class="card-item__slide">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="@img/slider-slide.png" alt="image" class="card-item__slide">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-item-small swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="@img/slider-slide.png" alt="image" class="card-item__slide">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="@img/slider-slide.png" alt="image" class="card-item__slide">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="@img/slider-slide.png" alt="image" class="card-item__slide">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-info__name">Название товара</span>
+                            <p class="card-info__description">Краткое описание</p>
+                            <div class="card-info__sizes card-sizes">
+                                <span class="card-sizes__text">Характеристики:</span>
+                                <div class="card-sizes__box"></div>
+                            </div>
+                            <div class="card-info__select select">
+                                <div class="select-wrapper">
+                                    <button class="select-main">Выберите размеры</button>
+                                    <div class="select-menu">
+                                        <button class="select-menu__button" data-value="choose 1">Выбор 1</button>
+                                        <button class="select-menu__button" data-value="choose 2">Выбор 2</button>
+                                        <button class="select-menu__button" data-value="choose 3">Выбор 3</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quantity-block">
+                                <span class="quantity-text">Количество:</span>
+                                @@include('html/quantity.html',{})
+                            </div>
+                            <span class="card-info__cost">100 $</span>
+                            <div class="card-info__buttons card-buttons">
+                                <button class="card-button button3">В корзину</button>
+                                <button class="card-button button3 active">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="recommendation">
+            <div class="container">
+                <div class="recommendation-inner">
+                    <div class="recommendation-title">Тетя Соня рекомендует</div>
+                    <div class="recommendation-row">
+                        <div class="recommendation-block">
+                            <a href="" class="recommendation-block__bg">
+                                <div class="recommendation-block__box">
+                                    <div class="recommendation-block__text">У тети Сони</div>
+                                    <div class="recommendation-block__icon"></div>
+                                </div>
+                                <button class="recommendation-block__button button3">Подписывайся</button>
+                            </a>
+                            <span class="recommendation-block__name">Мой канал на YOUTUBE</span>
+                        </div>
+                        <a href="" class="recommendation-block">
+                            <img src="@img/home/recommendation-img.png" alt="image" class="recommendation-block__img">
+                            <span class="recommendation-block__name">Мой канал на YOUTUBE</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="questions big-img bg5">
+            <div class="container">
+                <div class="questions-inner">
+                    <form class="questions-form">
+                        <h4 class="questions-form__title">Остались вопросы?</h4>
+                        <p class="questions-form__text">Напишите мне, и я помогу</p>
+                        <div class="questions-form__inputs">
+                            <input type="text" class="questions-form__input" placeholder="Как вас зовут?">
+                            <input type="email" class="questions-form__input" placeholder="Ваш E-mail">
+                        </div>
+                        <textarea placeholder="Ваш вопрос" class="questions-form__textarea"></textarea>
+                        <button type="submit" class="questions-form__button button1">
+                            <a href="">Отправить</a>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <a href="#header" class="toTop">
+            <img src="@img/arrow-up.png" alt="image">
+        </a>
+        @@include('html/footer.html',{})
+    </main>
+	@@include('html/script.html',{})
+</body>
+
+</html>
