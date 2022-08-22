@@ -4054,12 +4054,15 @@
 
 .reg-inner {
     padding-bottom: 173px;
+
     @media (max-width: $ipad + px) {
         padding-bottom: 123px;
     }
+
     @media (max-width: $ipod + px) {
         padding-bottom: 83px;
     }
+
     @media (max-width: $iphone + px) {
         padding-bottom: 43px;
     }
@@ -4069,9 +4072,11 @@
     width: 100%;
     display: flex;
     align-items: flex-start;
+
     @media (max-width: 880px) {
         justify-content: space-between;
     }
+
     @media (max-width: $ipod + px) {
         flex-direction: column;
         align-items: center;
@@ -4084,17 +4089,21 @@
     background: #FEFEFE;
     border: 1px solid #D8D8D8;
     border-radius: 20px;
+
     @media (max-width: 880px) {
         padding: 25px;
         width: 47%;
     }
+
     @media (max-width: $ipod + px) {
         width: 400px;
     }
+
     @media (max-width: 470px) {
         width: 100%;
         padding: 15px;
     }
+
     &__title {
         font-family: Montserrat;
         font-style: normal;
@@ -4102,6 +4111,7 @@
         font-size: 16px;
         line-height: 28px;
         color: #262626;
+
         @media (max-width: 470px) {
             font-size: 15px;
         }
@@ -4126,6 +4136,7 @@
         line-height: 28px;
         color: #262626;
         margin-bottom: 11px;
+
         @media (max-width: 470px) {
             font-size: 14px;
             height: 45px;
@@ -4139,9 +4150,11 @@
 
 .reg-info {
     margin-top: 51px;
+
     @media (max-width: 470px) {
         margin-top: 20px;
     }
+
     &__title {
         font-family: Montserrat;
         font-style: normal;
@@ -4149,6 +4162,7 @@
         font-size: 16px;
         line-height: 28px;
         color: #262626;
+
         @media (max-width: 470px) {
             font-size: 15px;
         }
@@ -4177,51 +4191,64 @@
         left: 0px;
     }
 }
-.reg-right{
+
+.reg-right {
     @media (max-width: 880px) {
         width: 47%;
     }
+
     @media (max-width: $ipod + px) {
         width: 400px;
     }
+
     @media (max-width: 470px) {
         width: 100%;
     }
 }
+
 .reg-form {
     width: 410px;
     margin-left: 143px;
+
     @media (max-width: $ipad + px) {
         margin-left: 75px;
     }
+
     @media (max-width: 880px) {
         margin-left: 0px;
         width: 100%;
     }
+
     @media (max-width: $ipod + px) {
         width: 100%;
         margin-top: 20px;
     }
+
     &__box {
         width: 100%;
         margin-bottom: 10px;
     }
+
     &__box:last-child {
         margin-bottom: 0;
     }
-    .reg-box__text{
+
+    .reg-box__text {
         @media (max-width: 470px) {
             font-size: 14px;
         }
     }
+
     .input {
         width: 100%;
         margin-top: 5px;
         color: $black;
+
         @media (max-width: 470px) {
             height: 45px;
         }
     }
+
     &__row {
         width: 100%;
         display: flex;
@@ -4237,11 +4264,13 @@
         line-height: 28px;
         text-decoration-line: underline;
         color: $red;
+
         @media (max-width: 470px) {
             font-size: 14px;
         }
     }
-    &__row-link:first-child{
+
+    &__row-link:first-child {
         text-decoration-line: underline;
         color: $black;
     }
@@ -4259,32 +4288,39 @@
         font-size: 16px;
         line-height: 28px;
         color: #262626;
+
         @media (max-width: 880px) {
             margin-top: 15px;
         }
+
         @media (max-width: 470px) {
             height: 45px;
             font-size: 14px;
         }
     }
 }
+
 .reg-checkboxes {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
+
     @media (max-width: 880px) {
         margin-top: 15px;
     }
 }
-.reg-checkboxes .checkbox .checkbox__label:after{
+
+.reg-checkboxes .checkbox .checkbox__label:after {
     @media (max-width: 880px) {
         top: 5px;
         left: 1.5px;
     }
+
     @media (max-width: $ipod + px) {
         top: 4.5px;
         left: 2px;
     }
+
     @media (max-width: 470px) {
         left: 1.5px;
     }
@@ -4297,9 +4333,11 @@
     justify-content: center;
     flex-direction: column;
     margin-top: 25px;
+
     @media (max-width: 880px) {
         margin-top: 15px;
     }
+
     &__text {
         font-family: Inter;
         font-style: normal;
@@ -4316,10 +4354,683 @@
         margin-top: 13px;
     }
 
-    &__icons  a {
+    &__icons a {
         margin-right: 15px;
     }
-    &__icons  a:last-child {
+
+    &__icons a:last-child {
         margin-right: 0px;
     }
+}
+
+//==================Account==============================================//
+
+.account {
+    width: 100%;
+    background-color: $white;
+    border-bottom: 1px solid rgb(227, 227, 227);
+}
+
+.account-inner {
+    padding-bottom: 173px;
+
+    @media (max-width: $ipad + px) {
+        padding-bottom: 103px;
+    }
+
+    @media (max-width: $ipod + px) {
+        padding-bottom: 83px;
+    }
+
+    @media (max-width: $iphone + px) {
+        padding-bottom: 43px;
+    }
+}
+
+.account .tabs-wrapper {
+    display: flex;
+    
+    @media (max-width: $ipod + px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.account .tabs-buttons {
+    min-width: 360px;
+    min-height: 448px;
+    padding: 30px 43px;
+    background: #F5F4F4;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    @media (max-width: $ipad + px) {
+        min-width: 250px;
+        min-height: 430px;
+        padding: 20px;
+        margin-right: 20px;
+    }
+    @media (max-width: $ipod + px) {
+        min-height: auto;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-right: 0;
+        margin-bottom: 30px;
+        padding: 15px;
+    }
+    @media (max-width: $iphone + px) {
+        margin-bottom: 15px;
+    }
+}
+
+.account .tabs-button {
+    cursor: pointer;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #262626;
+    text-align: left;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+    @media (max-width: $ipod + px) {
+        width: fit-content;
+        height: 40px;
+        margin-right: 25px;
+        margin-bottom: 15px;
+    }
+}
+
+.account .tabs-button:last-child {
+    margin-bottom: 0;
+    @media (max-width: $ipod + px) {
+        margin-bottom: 15px;
+    }
+    @media (max-width: 320px) {
+        margin-bottom: 0px;
+    }
+}
+
+.tabs-button__img {
+    width: 25px;
+    margin-right: 20px;
+    @media (max-width: $ipod + px) {
+        margin-right: 8px;
+    }
+}
+
+.account .tabs-button.active {
+    font-weight: bold;
+}
+
+.account .tabs-contents {
+    width: 100%;
+}
+
+.account .tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.orders {
+    width: 100%;
+}
+
+.orders-title {
+    display: block;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 28px;
+    color: #262626;
+    margin-bottom: 26px;
+    @media (max-width: $ipad + px) {
+        font-size: 26px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+    @media (max-width: $iphone + px) {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+}
+.orders-text{
+    @media (max-width: $ipad + px) {
+        font-size: 14px;
+    }
+}
+.usenName {
+    color: $red;
+}
+
+.orders-text span {
+    color: rgba(57, 53, 54, 1);
+}
+
+.settings {
+    width: 530px;
+    @media (max-width: $ipad + px) {
+        width: 100%;
+    }
+}
+
+.settings-title {
+    display: block;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #262626;
+    margin-bottom: 19px;
+}
+
+.settings-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    @media (max-width: $iphone + px) {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+}
+
+.settings-block {
+    width: 48%;
+    @media (max-width: $iphone + px) {
+        width: 100%;
+        margin-bottom: 13px;
+    }
+    &__text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 28px;
+        color: #262626;
+    }
+
+    &__input {
+        width: 100%;
+    }
+}
+
+.settings-password {
+    width: 100%;
+    margin-top: 20px;
+
+    &__text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        color: #6D6D6D;
+    }
+
+    &__input {
+        width: 100%;
+    }
+}
+
+.settings-button {
+    margin-top: 23px;
+    width: 196px;
+    height: 54px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $white;
+    @media (max-width: $iphone + px) {
+        margin: 0 auto;
+        width: 350px;
+        margin-top: 13px;
+        width: 100%;
+    }
+    @media (max-width: 424px) {
+        width: 100%;
+    }
+}
+
+.settings .checkbox .checkbox__label:after{
+    top: 4.5px;
+    left: 1.5px;
+}
+.address-title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #262626;
+    margin-bottom: 20px;
+    display: block;
+}
+.address-add {
+    margin-top: 31px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    color: #262626;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &__img {
+        width: 12px;
+        margin-right: 16px;
+    }
+}
+.address-text{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    color: #262626;
+}
+.address{
+    width: 530px;
+    @media (max-width: $ipad + px) {
+        width: 100%;
+    }
+}
+.address-select .select {
+    margin-bottom: 50px;
+}
+.address-select .select-wrapper{
+    position: relative;
+}
+.address-select .select-main {
+    width: 100%;
+    background: #F3EEEE;
+    border-radius: 50px;
+    height: 56px;
+    cursor: pointer;
+    text-align: left;
+    position: relative;
+    padding: 14px 23px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #B8B8B8;
+
+}
+.address-select .select-main:after{
+    content: '\f0dd';
+    font-family: fontAwesome;
+    position: absolute;
+    top: 13px;
+    right: 19px;
+    color: $black;
+}
+.address-select .select-main:focus,
+.address-select .select-main.active {
+    outline: none;
+}
+
+.address-select .select-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    max-height: 200px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    z-index: 10;
+}
+
+.address-select .select-menu.active {
+    display: flex;
+}
+
+.address-select .select-menu__button {
+    background-color: white;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    transition: all 250ms ease-in;
+    border-bottom: 1px solid #ccc;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: $black;
+}
+
+.address-select .select-menu__button:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.address-select .select-menu__button:last-child {
+    border-bottom: none;
+}
+.pay-title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #262626;
+    margin-bottom: 20px;
+    display: block;
+
+}
+.pay-block .radio{
+    margin-bottom: 12px;
+}
+.pay-block .radio:last-child{
+    margin-bottom: 0px;
+}
+.address-icon{
+    margin-left: auto;
+}
+
+//==================Bucket==============================================//
+
+.bucketPage {
+    width: 100%;
+    background-color: $white;
+}
+.bucketPage-inner {
+    padding-bottom: 43px;
+    @media (max-width: $iphone + px) {
+        padding-bottom: 20px;
+    }
+}
+.bucketPage-row {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.bucketPage-top__row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bucketPage-top__result{
+    width: 360px;
+}
+.bucketPage-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 19px;
+    border-bottom: 1px solid #D7D7D7;
+		&__img {
+            width: 160px;
+            @media (max-width: $ipad + px) {
+                width: 130px;
+            }
+            @media (max-width: $ipod + px) {
+                width: 100px;
+            }
+		}
+
+		&__name {
+            width: 128px;
+            text-align: center;
+		}
+
+		&__cost {
+            width: 50px;
+            text-align: center;
+		}
+
+		&__amount {
+            width: 98px;
+            text-align: center;
+            
+		}
+
+		&__buy {
+            width: 88px;
+            text-align: center;
+		}
+
+		&__cross {
+            text-align: center;
+            padding-right: 20px;
+            visibility: hidden;
+            @media (max-width: 900px) {
+                padding-right: 0;
+            }
+		}
+        @media (max-width: $iphone + px) {
+            display: none;
+        }
+}
+.bucketPage-top__result{
+    @media (max-width: 900px) {
+        display: none;
+    }
+}
+
+.bucketPage-block {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
+}
+.bucketPage-block__column{
+    width: 100%;
+}
+.bucketPage-item:first-child{
+    @media (max-width: $iphone + px) {
+        border-top: 1px solid #D7D7D7;
+    }
+}
+.bucketPage-item:first-child{
+    @media (max-width: $iphone + px) {
+        margin-top: 0px;
+    }
+}
+.bucketPage-item {
+    border-bottom: 1px solid #D7D7D7;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: $iphone + px) {
+        flex-direction: column;
+        border: 1px solid #D7D7D7;
+        padding: 12px;
+        width: 320px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    @media (max-width: 424px) {
+        padding: 12px;
+        width: 290px;
+    }
+    &__img {
+        width: 160px;
+        height: 90px;
+        background: #D9D9D9;
+        @media (max-width: $ipad + px) {
+            width: 130px;
+        }
+        @media (max-width: $ipod + px) {
+            width: 100px;
+            height: 70px;
+        }
+        @media (max-width: $iphone + px) {
+            width: 290px;
+            height: 150px;
+        }
+        @media (max-width: 424px) {
+            width: 100%;
+        }
+    }
+
+    &__name {
+        width: 128px;
+        justify-content: center;
+        @media (max-width: $iphone + px) {
+            font-size: 14px;
+            width: 100%;
+            justify-content: center;
+            margin-top: 10px;
+        }
+    }
+    .adaptive{
+        display: flex;
+    }
+    .adaptive .adaptive-text{
+        font-weight: bold;
+        margin-right: 6px;
+        display: none;
+        @media (max-width: $iphone + px) {
+            display: flex;
+        }
+    }
+    &__cost {
+        width: 50px;
+        justify-content: center;
+        @media (max-width: $iphone + px) {
+            font-size: 14px;
+            width: 100%;
+            justify-content: center;
+            margin-top: 10px;
+        }
+    }
+
+    &__amount {
+        width: 98px;
+        justify-content: center;
+        @media (max-width: $iphone + px) {
+            width: 100%;
+            font-size: 14px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+    }
+
+    &__buy {
+        width: 88px;
+        justify-content: center;
+        @media (max-width: $iphone + px) {
+            width: 100%;
+            font-size: 14px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+    }
+}
+.fa-xmark {
+    font-size: 14px;
+    padding-right: 20px;
+    cursor: pointer;
+    @media (max-width: $iphone + px) {
+        padding-right: 0;
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+.bucketPage-result {
+    width: 360px;
+    background: $white;
+    border: 1px solid #D7D7D7;
+    border-top: none;
+    padding: 30px;
+    @media (max-width: $ipad + px) {
+        padding: 15px;
+    }
+    @media (max-width: 900px) {
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 520px;
+        border-top: 1px solid #D7D7D7;
+    }
+    @media (max-width: $iphone + px) {
+        width: 100%;
+    }
+    &__title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+        color: $black;
+    }
+
+    &__block {
+        margin-top: 20px;
+        margin-bottom: 84px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-top: 1px solid #D7D7D7;
+        border-bottom: 1px solid #D7D7D7;
+        @media (max-width: $iphone + px) {
+            margin-bottom: 35px;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            margin-top: 15px;
+        }
+    }
+
+    &__block-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__block-row span{
+        font-weight: bold;
+    }
+    &__button {
+        margin-top: 18px;
+        width: 100%;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 36px;
+        color: $white;
+        @media (max-width: $iphone + px) {
+            height: 40px;
+        }
+    }
+}
+.bucketPage-result__block-row__text{
+    font-size: 14px;
 }

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{ "title":"Account" })
+
+<body>
+    <main class="wrapper max-width">
+        @@include('html/header.html',{})
+        <section class="breadCrumbs">
+            <div class="container">
+                <div class="breadCrumbs-links">
+                    <a href="index.html" class="breadCrumbs-links__link">Главная / </a>
+                    <span class="breadCrumbs-links__text">Мой кабинет</span>
+                </div>
+            </div>
+        </section>
+        <section class="account">
+            <div class="container">
+                <div class="account-inner">
+                    <div class="tabs">
+                        <div class="tabs-wrapper">
+                            <div class="tabs-buttons">
+                                <button class="tabs-button" data-tab="#tab_3">
+                                    <img src="@img/account/account.svg" alt="image" class="tabs-button__img">
+                                    Заказы
+                                </button>
+                                <button class="tabs-button" data-tab="#tab_4">
+                                    <img src="@img/account/account2.svg" alt="image" class="tabs-button__img">
+                                    Способы оплаты
+                                </button>
+                                <button class="tabs-button" data-tab="#tab_5">
+                                    <img src="@img/account/account3.svg" alt="image" class="tabs-button__img">
+                                    Адрес доставки
+                                </button>
+                                <button class="tabs-button" data-tab="#tab_6">
+                                    <img src="@img/account/account4.svg" alt="image" class="tabs-button__img">
+                                    Настройки
+                                </button>
+                                <button class="tabs-button" data-tab="#tab_7">
+                                    <img src="@img/account/account5.svg" alt="image" class="tabs-button__img">
+                                    Выйти
+                                </button>
+                            </div>
+                            <div class="tabs-contents">
+                                <div class="tab-content" id="tab_3">
+                                    <div class="orders">
+                                        <span class="orders-title">Привет, <span class="usenName">user_01</span></span>
+                                        <p class="orders-text text">В меню своего аккаунта вы можете просматривать свои <span>заказы</span> , управлять <span>способом оплаты</span>  и редактировать <span>данные</span>  своего аккаунта.</p>
+                                    </div>
+                                </div>
+                                <div class="tab-content" id="tab_4">
+                                    <div class="pay">
+                                        <span class="pay-title">Выберите способ оплаты</span>
+                                        <div class="pay-block">
+                                            <div class="radio">
+                                                <input class="radio__input" type="checkbox" id="radio_1"> <!-- or type="radio"-->
+                                                <label class="radio__label" for="radio_1">Банковский перевод или наличные на месте</label>
+                                                <img src="@img/account/mastercard.png" alt="image" class="address-icon">
+                                            </div>
+                                            <div class="radio">
+                                                <input class="radio__input" type="checkbox" id="radio_2"> <!-- or type="radio"-->
+                                                <label class="radio__label" for="radio_2">Credit Card</label>
+                                                <img src="@img/account/visa.png" alt="image" class="address-icon">
+                                            </div>
+                                            <div class="radio">
+                                                <input class="radio__input" type="checkbox" id="radio_3"> <!-- or type="radio"-->
+                                                <label class="radio__label" for="radio_3">PayPal</label>
+                                                <img src="@img/account/paypal.png" alt="image" class="address-icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-content" id="tab_5">
+                                    <div class="address">
+                                        <span class="address-title">Адрес доставки</span>
+                                        <div class="settings-row">
+                                            <div class="settings-block">
+                                                <div class="address-text settings-block__text">Выберите страну</div>
+                                                <div class="address-select select">
+                                                    <div class="select-wrapper">
+                                                        <button class="select-main">Израиль</button>
+                                                        <div class="select-menu">
+                                                            <button class="select-menu__button" data-value="choose 1">Выбор 1</button>
+                                                            <button class="select-menu__button" data-value="choose 2">Выбор 2</button>
+                                                            <button class="select-menu__button" data-value="choose 3">Выбор 3</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="settings-block">
+                                                <div class="address-text settings-block__text">Город</div>
+                                                <div class="address-select select">
+                                                    <div class="select-wrapper">
+                                                        <button class="select-main">Выберите город</button>
+                                                        <div class="select-menu">
+                                                            <button class="select-menu__button" data-value="choose 1">Выбор 1</button>
+                                                            <button class="select-menu__button" data-value="choose 2">Выбор 2</button>
+                                                            <button class="select-menu__button" data-value="choose 3">Выбор 3</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="settings-row">
+                                            <div class="settings-block">
+                                                <div class="address-text settings-block__text">Адрес</div>
+                                                <input type="text" class="settings-block__input input" placeholder="Введите адрес">
+                                            </div>
+                                            <div class="settings-block">
+                                                <div class="address-text settings-block__text">Индекс</div>
+                                                <input type="number" class="settings-block__input input" placeholder="220000">
+                                            </div>
+                                        </div>
+                                        <button class="address-add">
+                                            <img src="@img/plus.svg" alt="image" class="address-add__img">
+                                            Добавить новый  адрес
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="tab-content" id="tab_6">
+                                    <div class="settings">
+                                        <span class="settings-title">Настройки</span>
+                                        <div class="settings-row">
+                                            <div class="settings-block">
+                                                <div class="settings-block__text">Имя</div>
+                                                <input type="text" class="settings-block__input input" placeholder="Имя">
+                                            </div>
+                                            <div class="settings-block">
+                                                <div class="settings-block__text">Фамилия</div>
+                                                <input type="text" class="settings-block__input input" placeholder="Фамилия">
+                                            </div>
+                                        </div>
+                                        <div class="settings-row">
+                                            <div class="settings-block">
+                                                <div class="settings-block__text">Email</div>
+                                                <input type="email" class="settings-block__input input" placeholder="Email">
+                                            </div>
+                                            <div class="settings-block">
+                                                <div class="settings-block__text">Телефон</div>
+                                                <input type="tel" class="settings-block__input input" placeholder="+7">
+                                            </div>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input class="checkbox__input" type="checkbox" id="checkbox_4">
+                                            <label class="checkbox__label" for="checkbox_4">Сохранить мои данные</label>
+                                        </div>
+                                        <input type="password" class="settings-block__input input" placeholder="Пароль">
+                                        <div class="settings-password__text">Не менее 8 символов</div>
+                                        <button class="settings-button button3 active">Сохранить</button>
+                                    </div>
+                                </div>
+                                <div class="tab-content" id="tab_7"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a href="#header" class="toTop">
+            <img src="@img/arrow-up.png" alt="image">
+        </a>
+        @@include('html/footer.html',{})
+    </main>
+    @@include('html/script.html',{})
+</body>
+
+</html>
