@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<link rel="stylesheet" href="css/style.min.css">
+ 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+ 	<!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+ 	<title>Registration</title>
+ </head>
+
+<body>
+    <main class="wrapper max-width">
+        <header class="header max-width" id="header">
+    <div class="header-bg max-width">
+        <div class="container">
+            <div class="header-inner">
+                <div class="header-top">
+                    <a href="index.html">
+                        <img src="img/header/logo.png" alt="image" class="header-logo">
+                    </a>
+                    <div class="header-input__block">
+                        <input type="text" class="header-input">
+                        <img src="img/header/search.svg" alt="image" class="header-input__icon">
+                    </div>
+                    <div class="header-block">
+                        <div class="header-login">
+                            <a href="account.html" class="header-login__link enter">Войти</a>
+                            /
+                            <a href="registration.html" class="header-login__link registration">Регистрация</a>
+                        </div>
+                        <div class="burger-wrapper">
+    <a href="#" class="burger">
+        <span></span>
+    </a>
+</div>
+                        <a href="bucket.html" class="header-bucket">
+                            <div class="header-bucket__icon">
+                                <img src="img/header/cart.svg" alt="image" class="header-bucket__img">
+                            </div>
+                            <div class="header-bucket__count">1</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <nav class="header-nav">
+                        <div class="header-bottom__login">
+                            <a href="account.html" class="header-bottom__link adaptive-enter">Войти</a>
+                            <a href="registration.html" class="header-bottom__link adaptive-registration">Регистрация</a>
+                        </div>
+                        <li>
+                            <a href="about.html" class="header-nav__link">ОБО МНЕ</a>
+                        </li>
+                        <li>
+                            <a href="onlineCourse.html" class="header-nav__link">ОНЛАЙН ШКОЛА</a>
+                        </li>
+                        <li>
+                            <a href="recipeCards.html" class="header-nav__link">КАРТОЧКИ</a>
+                        </li>
+                        <li>
+                            <a href="shop.html" class="header-nav__link">МАГАЗИН</a>
+                        </li>
+                        <div class="spoiler">
+                            <div class="spoiler-wrapper">
+                                <div class="spoiler-title">
+                                    <div class="spoiler-title__text">БЛОГ</div>
+                                    <div class="spoiler-title__arrow fa-solid fa-chevron-down"></div>
+                                </div>
+                                <div class="spoiler-content">
+                                    <div class="spoiler-content__wrapper">
+                                        <a href="catalogRecipes.html" class="header-nav__link">Рецепты</a>
+                                        <a href="talk.html" class="header-nav__link">А поговорить</a>
+                                        <a href="faq.html" class="header-nav__link">FAQ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="header-menu">
+                                <div class="header-menu__title">
+                                    <span>БЛОГ</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                                <div class="header-menu__list">
+                                    <li>
+                                        <a href="catalogRecipes.html" class="header-nav__link">Рецепты</a>
+                                    </li>
+                                    <li>
+                                        <a href="talk.html" class="header-nav__link">А поговорить</a>
+                                    </li>
+                                    <li>
+                                        <a href="faq.html" class="header-nav__link">FAQ</a>
+                                    </li>
+                                </div>
+                            </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <section class="breadCrumbs">
+            <div class="container">
+                <div class="breadCrumbs-links">
+                    <a href="index.html" class="breadCrumbs-links__link">Главная / </a>
+                    <span class="breadCrumbs-links__text">Регистрация</span>
+                </div>
+            </div>
+        </section>
+        <section class="reg">
+            <div class="container">
+                <div class="reg-inner">
+                    <div class="reg-row">
+                        <div class="reg-left">
+                            <span class="reg-left__title">Я здесь впервые</span>
+                            <div class="reg-left__buttons reg-buttons">
+                                <button class="reg-buttons__button button3">Продолжить как гость</button>
+                                <button class="reg-buttons__button button3 active">Зарегистрироваться</button>
+                            </div>
+                            <div class="reg-left__info reg-info">
+                                <span class="reg-info__title"> В личном кабинете вы можете:</span>
+                                <span class="reg-info__text"> Отслеживать свои заказы онлайн</span>
+                                <span class="reg-info__text"> Просмотривать истории заказов</span>
+                                <span class="reg-info__text"> Создавать и редактировать списки товаров</span>
+                                <span class="reg-info__text"> Выбирать адрес доставки</span>
+                            </div>
+                        </div>
+                        <div class="reg-right">
+                            <form class="reg-form">
+                                <div class="reg-form__box reg-box">
+                                    <div class="reg-box__text">
+                                        <span class="red-star">*</span>E-mail
+                                    </div>
+                                    <input type="email" class="email input" placeholder="Введите ваш Email">
+                                </div>
+                                <div class="reg-form__box">
+                                    <div class="reg-box__text">
+                                        <span class="red-star">*</span>Password
+                                    </div>
+                                    <input type="password" class="password input" placeholder="Пароль 8 симоволов">
+                                </div>
+                                <div class="reg-form__row">
+                                    <a href="" class="reg-form__row-link">Забыли пароль?</a>
+                                    <a href="" class="reg-form__row-link">Войти</a>
+                                </div>
+                                <div class="reg-form__checkboxes reg-checkboxes">
+                                    <div class="checkbox">
+                                        <input class="checkbox__input" type="checkbox" id="checkbox_1">
+                                        <label class="checkbox__label" for="checkbox_1">Подписаться на все новости, акции и предложения</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="checkbox__input" type="checkbox" id="checkbox_2">
+                                        <label class="checkbox__label" for="checkbox_2">Получать только новости</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input class="checkbox__input" type="checkbox" id="checkbox_3">
+                                        <label class="checkbox__label" for="checkbox_3">Получать только акции</label>
+                                    </div>
+                                </div>
+                                <button class="reg-form__button button3 active">Зарегистрироваться</button>
+                                <div class="reg-form__enter reg-enter">
+                                    <span class="reg-enter__text">Войти с помощью</span>
+                                    <div class="reg-enter__icons">
+                                        <a href=""><img src="img/google.png" alt="image" class="reg-enter__icons-icon"></a> 
+                                        <a href=""><img src="img/facebook.png" alt="image" class="reg-enter__icons-icon"></a> 
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a href="#header" class="toTop">
+            <img src="img/arrow-up.png" alt="image">
+        </a>
+        <footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-row">
+                <div class="footer-column">
+                    <div class="footer-column-top">
+                        <img src="img/header/logo.png" alt="image" class="footer-column__img">
+                        <div class="footer-column__title">Душевная кухня</div>
+                    </div>
+                    <div class="footer-column-list">
+                        <li><a href="" class="footer-column-list__link">Выходные данные</a></li>
+                        <li><a href="" class="footer-column-list__link">Данные</a></li>
+                        <li><a href="" class="footer-column-list__link">Данные</a></li>
+                        <li><a href="" class="footer-column-list__link">Данные</a></li>
+                    </div>
+                    <div class="footer-column-bottom">
+                        Все права защищены <br>
+                        Тетя Соня 2022
+                    </div>
+                </div>
+                <div class="footer-block">
+                    <div class="footer-block-top">
+                        <div class="footer-block-top__column">
+                            <div class="footer-block-top__title">ОБО МНЕ</div>
+                            <a href="" class="footer-block-top__link">Кто я такая</a>
+                            <a href="" class="footer-block-top__link">Обо мне в СМИ</a>
+                            <div class="footer-media-column">
+                                <div class="footer-media-column__title">Социальные сети</div>
+                                <div class="footer-media-icons">
+                                    <a href=""><img src="img/footer/footer-icon.svg" alt="image" class="footer-media-icons__icon"></a>
+                                    <a href=""><img src="img/footer/footer-icon2.svg" alt="image" class="footer-media-icons__icon"></a>
+                                    <a href=""><img src="img/footer/footer-icon3.svg" alt="image" class="footer-media-icons__icon"></a>
+                                    <a href=""><img src="img/footer/footer-icon4.svg" alt="image" class="footer-media-icons__icon"></a>
+                                    <a href=""><img src="img/footer/footer-icon5.svg" alt="image" class="footer-media-icons__icon"></a>
+                                    <a href=""><img src="img/footer/footer-icon6.svg" alt="image" class="footer-media-icons__icon"></a>
+                                </div>
+                            </div>
+                            <a href="" class="footer-block-bottom__link">Политика конфиденциальности</a>
+                        </div>
+                        <div class="footer-block-top__column">
+                            <div class="footer-block-top__title">МАГАЗИН</div>
+                            <a href="" class="footer-block-top__link">Доброкарты</a>
+                            <a href="" class="footer-block-top__link">Футболки</a>
+                            <div class="footer-media-column">
+                                <div class="footer-media-column__title">Поделиться</div>
+                                <div class="footer-media-icons">
+                                    <a href=""><img src="img/footer/footer-icon2.svg" alt="image" class="footer-media-icons__icon"></a>
+                                    <a href=""><img src="img/footer/footer-icon5.svg" alt="image" class="footer-media-icons__icon"></a>
+                                    <a href=""><img src="img/footer/footer-icon7.svg" alt="image" class="footer-media-icons__icon"></a>
+                                </div>
+                            </div>
+                            <a href="" class="footer-block-bottom__link">Авторские права</a>
+                        </div>
+                        <div class="footer-block-top__column">
+                            <div class="footer-block-top__title">ОНЛАЙН ШКОЛА</div>
+                            <a href="" class="footer-block-top__link">Карточки</a>
+                            <a href="" class="footer-block-top__link">Футболки</a>
+                            <div class="footer-media-column">
+                                <div class="footer-media-column__title">Написать мне</div>
+                                <div class="footer-media-icons">
+                                    <a href=""><img src="img/footer/footer-icon3.svg" alt="image" class="footer-media-icons__icon"></a>
+                                    <a href=""><img src="img/footer/footer-icon8.svg" alt="image" class="footer-media-icons__icon"></a>
+                                    <a href=""><img src="img/footer/footer-icon9.svg" alt="image" class="footer-media-icons__icon"></a>
+                                </div>
+                            </div>
+                            <a href="" class="footer-block-bottom__link">Договор присоединения</a>
+                        </div>
+                        <div class="footer-block-top__column">
+                            <div class="footer-block-top__title">БЛОГ</div>
+                            <a href="" class="footer-block-top__link">Рецепты</a>
+                            <a href="" class="footer-block-top__link">События</a>
+                            <a href="" class="footer-block-top__link">А поговорить</a>
+                            <a href="" class="footer-block-top__link">FAQ</a>
+                            <div class="footer-media-column">
+                                <div class="footer-media-column__title">Написать мне</div>
+                                <div class="footer-media-icons">
+                                    <a href=""><img src="img/footer/footer-icon3.svg" alt="image" class="footer-media-icons__icon"></a>
+                                    <a href=""><img src="img/footer/footer-icon8.svg" alt="image" class="footer-media-icons__icon"></a>
+                                    <a href=""><img src="img/footer/footer-icon9.svg" alt="image" class="footer-media-icons__icon"></a>
+                                </div>
+                            </div>
+                            <a href="" class="footer-block-bottom__link">Способы оплаты</a>
+                        </div>
+                    </div>
+                    <div class="footer-block-media">
+                        <div class="footer-media-column">
+                            <div class="footer-media-column__title">Социальные сети</div>
+                            <div class="footer-media-icons">
+                                <a href=""><img src="img/footer/footer-icon.svg" alt="image" class="footer-media-icons__icon"></a>
+                                <a href=""><img src="img/footer/footer-icon2.svg" alt="image" class="footer-media-icons__icon"></a>
+                                <a href=""><img src="img/footer/footer-icon3.svg" alt="image" class="footer-media-icons__icon"></a>
+                                <a href=""><img src="img/footer/footer-icon4.svg" alt="image" class="footer-media-icons__icon"></a>
+                                <a href=""><img src="img/footer/footer-icon5.svg" alt="image" class="footer-media-icons__icon"></a>
+                                <a href=""><img src="img/footer/footer-icon6.svg" alt="image" class="footer-media-icons__icon"></a>
+                            </div>
+                        </div>
+                        <div class="footer-media-column">
+                            <div class="footer-media-column__title">Поделиться</div>
+                            <div class="footer-media-icons">
+                                <a href=""><img src="img/footer/footer-icon2.svg" alt="image" class="footer-media-icons__icon"></a>
+                                <a href=""><img src="img/footer/footer-icon5.svg" alt="image" class="footer-media-icons__icon"></a>
+                                <a href=""><img src="img/footer/footer-icon7.svg" alt="image" class="footer-media-icons__icon"></a>
+                            </div>
+                        </div>
+                        <div class="footer-media-column">
+                            <div class="footer-media-column__title">Написать мне</div>
+                            <div class="footer-media-icons">
+                                <a href=""><img src="img/footer/footer-icon3.svg" alt="image" class="footer-media-icons__icon"></a>
+                                <a href=""><img src="img/footer/footer-icon8.svg" alt="image" class="footer-media-icons__icon"></a>
+                                <a href=""><img src="img/footer/footer-icon9.svg" alt="image" class="footer-media-icons__icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-block-bottom">
+                        <a href="" class="footer-block-bottom__link">Политика конфиденциальности</a>
+                        <a href="" class="footer-block-bottom__link">Авторские права</a>
+                        <a href="" class="footer-block-bottom__link">Договор присоединения</a>
+                        <a href="" class="footer-block-bottom__link">Способы оплаты</a>
+                    </div>
+                    <div class="footer-payload">
+                        <img src="img/footer/footer-img.png" alt="image" class="footer-pay__img">
+                        <img src="img/footer/footer-img2.png" alt="image" class="footer-pay__img">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-list">
+                <li><a href="" class="footer-column-list__link">Выходные данные</a></li>
+                <li><a href="" class="footer-column-list__link">Данные</a></li>
+                <li><a href="" class="footer-column-list__link">Данные</a></li>
+                <li><a href="" class="footer-column-list__link">Данные</a></li>
+            </div>
+            <div class="footer-media">
+                <div class="footer-media-column">
+                    <div class="footer-media-column__title">Социальные сети</div>
+                    <div class="footer-media-icons">
+                        <a href=""><img src="img/footer/footer-icon.svg" alt="image" class="footer-media-icons__icon"></a>
+                        <a href=""><img src="img/footer/footer-icon2.svg" alt="image" class="footer-media-icons__icon"></a>
+                        <a href=""><img src="img/footer/footer-icon3.svg" alt="image" class="footer-media-icons__icon"></a>
+                        <a href=""><img src="img/footer/footer-icon4.svg" alt="image" class="footer-media-icons__icon"></a>
+                        <a href=""><img src="img/footer/footer-icon5.svg" alt="image" class="footer-media-icons__icon"></a>
+                        <a href=""><img src="img/footer/footer-icon6.svg" alt="image" class="footer-media-icons__icon"></a>
+                    </div>
+                </div>
+                <div class="footer-media-column">
+                    <div class="footer-media-column__title">Поделиться</div>
+                    <div class="footer-media-icons">
+                        <a href=""><img src="img/footer/footer-icon2.svg" alt="image" class="footer-media-icons__icon"></a>
+                        <a href=""><img src="img/footer/footer-icon5.svg" alt="image" class="footer-media-icons__icon"></a>
+                        <a href=""><img src="img/footer/footer-icon7.svg" alt="image" class="footer-media-icons__icon"></a>
+                    </div>
+                </div>
+                <div class="footer-media-column">
+                    <div class="footer-media-column__title">Написать мне</div>
+                    <div class="footer-media-icons">
+                        <a href=""><img src="img/footer/footer-icon3.svg" alt="image" class="footer-media-icons__icon"></a>
+                        <a href=""><img src="img/footer/footer-icon8.svg" alt="image" class="footer-media-icons__icon"></a>
+                        <a href=""><img src="img/footer/footer-icon9.svg" alt="image" class="footer-media-icons__icon"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-pay">
+                <img src="img/footer/footer-img.png" alt="image" class="footer-pay__img">
+                <img src="img/footer/footer-img2.png" alt="image" class="footer-pay__img">
+            </div>
+        </div>
+    </div>
+    <div class="footer-box">
+        <div class="footer-policy">
+            <a href="" class="footer-policy__link">Политика конфиденциальности</a>
+            <a href="" class="footer-policy__link">Авторские права</a>
+            <a href="" class="footer-policy__link">Договор присоединения</a>
+            <a href="" class="footer-policy__link">Способы оплаты</a>
+        </div>
+        
+        <img src="img/footer/footer-img2.png" alt="image">
+        <div class="footer-column-bottom">
+            Все права защищены Тетя Соня 2022
+        </div>
+    </div>
+</footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/app.min.js"></script>
+
+</body>
+
+</html>
