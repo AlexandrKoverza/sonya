@@ -4,9 +4,7 @@
  	<meta charset="UTF-8">
  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
- 	<link rel="stylesheet" href="css/style.min.css">
- 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
- 	<!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+ 	<link rel="stylesheet" href="css/style.min.css?_v=20220916221752">
  	<title>Card</title>
  </head>
 
@@ -18,7 +16,7 @@
             <div class="header-inner">
                 <div class="header-top">
                     <a href="index.html">
-                        <img src="img/header/logo.png" alt="image" class="header-logo">
+                        <picture><source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.png" alt="image" class="header-logo"></picture>
                     </a>
                     <div class="header-input__block">
                         <input type="text" class="header-input">
@@ -31,10 +29,10 @@
                             <a href="registration.html" class="header-login__link registration">Регистрация</a>
                         </div>
                         <div class="burger-wrapper">
-    <a href="#" class="burger">
-        <span></span>
-    </a>
-</div>
+                            <a href="" class="burger">
+                                <span></span>
+                            </a>
+                        </div>
                         <a href="bucket.html" class="header-bucket">
                             <div class="header-bucket__icon">
                                 <img src="img/header/cart.svg" alt="image" class="header-bucket__img">
@@ -44,24 +42,16 @@
                     </div>
                 </div>
                 <div class="header-bottom">
-                    <nav class="header-nav">
+                    <div class="header-nav">
                         <div class="header-bottom__login">
                             <a href="account.html" class="header-bottom__link adaptive-enter">Войти</a>
                             <a href="registration.html" class="header-bottom__link adaptive-registration">Регистрация</a>
                         </div>
-                        <li>
-                            <a href="about.html" class="header-nav__link">ОБО МНЕ</a>
-                        </li>
-                        <li>
-                            <a href="onlineCourse.html" class="header-nav__link">ОНЛАЙН ШКОЛА</a>
-                        </li>
-                        <li>
-                            <a href="recipeCards.html" class="header-nav__link">КАРТОЧКИ</a>
-                        </li>
-                        <li>
-                            <a href="shop.html" class="header-nav__link">МАГАЗИН</a>
-                        </li>
-                        <div class="spoiler">
+                        <a href="about.html" class="header-nav__link">ОБО МНЕ</a>
+                        <a href="onlineCourse.html" class="header-nav__link">ОНЛАЙН ШКОЛА</a>
+                        <a href="recipeCards.html" class="header-nav__link">КАРТОЧКИ</a>
+                        <a href="shop.html" class="header-nav__link">МАГАЗИН</a>
+                        <div class="headerSpoiler spoiler">
                             <div class="spoiler-wrapper">
                                 <div class="spoiler-title">
                                     <div class="spoiler-title__text">БЛОГ</div>
@@ -82,24 +72,17 @@
                                     <i class="fa-solid fa-chevron-down"></i>
                                 </div>
                                 <div class="header-menu__list">
-                                    <li>
-                                        <a href="catalogRecipes.html" class="header-nav__link">Рецепты</a>
-                                    </li>
-                                    <li>
-                                        <a href="talk.html" class="header-nav__link">А поговорить</a>
-                                    </li>
-                                    <li>
-                                        <a href="faq.html" class="header-nav__link">FAQ</a>
-                                    </li>
+                                    <a href="catalogRecipes.html" class="header-nav__link">Рецепты</a>
+                                    <a href="talk.html" class="header-nav__link">А поговорить</a>
+                                    <a href="faq.html" class="header-nav__link">FAQ</a>
                                 </div>
                             </div>
-                    </nav>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </header>
-
         <section class="breadCrumbs">
             <div class="container">
                 <div class="breadCrumbs-links">
@@ -118,26 +101,38 @@
                             <div class="card-item-swiper swiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img src="img/slider-slide.png" alt="image" class="card-item__slide">
+                                        <picture><source srcset="img/slider-slide.webp" type="image/webp"><img src="img/slider-slide.png" alt="image" class="card-item__slide swiper-lazy"></picture>
+                                        <div class="swiper-lazy-preloader"></div>
+
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="img/slider-slide.png" alt="image" class="card-item__slide">
+                                        <picture><source srcset="img/slider-slide.webp" type="image/webp"><img src="img/slider-slide.png" alt="image" class="card-item__slide swiper-lazy"></picture>
+                                        <div class="swiper-lazy-preloader"></div>
+
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="img/slider-slide.png" alt="image" class="card-item__slide">
+                                        <picture><source srcset="img/slider-slide.webp" type="image/webp"><img src="img/slider-slide.png" alt="image" class="card-item__slide swiper-lazy"></picture>
+                                        <div class="swiper-lazy-preloader"></div>
+
                                     </div>
                                 </div>
                             </div>
                             <div class="card-item-small swiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img src="img/slider-slide.png" alt="image" class="card-item__slide">
+                                        <picture><source srcset="img/slider-slide.webp" type="image/webp"><img src="img/slider-slide.png" alt="image" class="card-item__slide swiper-lazy"></picture>
+                                        <div class="swiper-lazy-preloader"></div>
+
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="img/slider-slide.png" alt="image" class="card-item__slide">
+                                        <picture><source srcset="img/slider-slide.webp" type="image/webp"><img src="img/slider-slide.png" alt="image" class="card-item__slide swiper-lazy"></picture>
+                                        <div class="swiper-lazy-preloader"></div>
+
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="img/slider-slide.png" alt="image" class="card-item__slide">
+                                        <picture><source srcset="img/slider-slide.webp" type="image/webp"><img src="img/slider-slide.png" alt="image" class="card-item__slide swiper-lazy"></picture>
+                                        <div class="swiper-lazy-preloader"></div>
+
                                     </div>
                                 </div>
                             </div>
@@ -189,17 +184,17 @@
 					<div class="recommendation-title">Тетя Соня рекомендует</div>
 					<div class="recommendation-row">
 						<div class="recommendation-block">
-							<a href="https://www.youtube.com/c/%D0%A3%D1%82%D0%B5%D1%82%D0%B8%D0%A1%D0%BE%D0%BD%D0%B8" class="recommendation-block__bg">
+							<div class="recommendation-block__bg">
 								<div class="recommendation-block__box">
 									<div class="recommendation-block__text">У тети Сони</div>
 									<div class="recommendation-block__icon"></div>
 								</div>
-								<button class="recommendation-block__button button3">Подписывайся</button>
-							</a>
+								<a href="https://www.youtube.com/c/%D0%A3%D1%82%D0%B5%D1%82%D0%B8%D0%A1%D0%BE%D0%BD%D0%B8" class="recommendation-block__button button3 active">Подписывайся</a>
+							</div>
 							<span class="recommendation-block__name">Мой канал на YOUTUBE</span>
 						</div>
 						<a href="" class="recommendation-block">
-							<img src="img/home/recommendation-img.png" alt="image" class="recommendation-block__img">
+							<picture><source srcset="img/home/recommendation-img.webp" type="image/webp"><img src="img/home/recommendation-img.png" alt="image" class="recommendation-block__img"></picture>
 							<span class="recommendation-block__name">Waime Spices Israel</span>
 						</a>
 					</div>
@@ -217,15 +212,13 @@
                             <input type="email" class="questions-form__input" placeholder="Ваш E-mail">
                         </div>
                         <textarea placeholder="Ваш вопрос" class="questions-form__textarea"></textarea>
-                        <button type="submit" class="questions-form__button button1">
-                            <a href="">Отправить</a>
-                        </button>
+                        <a class="questions-form__button button1" href="">Отправить</a>
                     </form>
                 </div>
             </div>
         </section>
         <a href="#header" class="toTop">
-            <img src="img/arrow-up.png" alt="image">
+            <picture><source srcset="img/arrow-up.webp" type="image/webp"><img src="img/arrow-up.png" alt="image"></picture>
         </a>
         <footer class="footer">
     <div class="container">
@@ -233,18 +226,12 @@
             <div class="footer-row">
                 <div class="footer-column">
                     <div class="footer-column-top">
-                        <img src="img/header/logo.png" alt="image" class="footer-column__img">
+                        <picture><source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.png" alt="image" class="footer-column__img"></picture>
                         <div class="footer-column__title">Душевная кухня</div>
                     </div>
                     <div class="footer-column-list">
-                        <li><a href="" class="footer-column-list__link">Выходные данные</a></li>
-                        <li><a href="" class="footer-column-list__link">Данные</a></li>
-                        <li><a href="" class="footer-column-list__link">Данные</a></li>
-                        <li><a href="" class="footer-column-list__link">Данные</a></li>
-                    </div>
-                    <div class="footer-column-bottom">
-                        Все права защищены <br>
-                        Тетя Соня 2022
+                        <p class="footer-column-list__title">Толочинская Софья</p>
+                        <p class="footer-column-list__text">УНП: 337616189</p>
                     </div>
                 </div>
                 <div class="footer-block">
@@ -308,7 +295,6 @@
                                     <a href=""><img src="img/footer/footer-icon9.svg" alt="image" class="footer-media-icons__icon"></a>
                                 </div>
                             </div>
-                            <a href="" class="footer-block-bottom__link">Способы оплаты</a>
                         </div>
                     </div>
                     <div class="footer-block-media">
@@ -346,17 +332,11 @@
                         <a href="" class="footer-block-bottom__link">Договор присоединения</a>
                         <a href="" class="footer-block-bottom__link">Способы оплаты</a>
                     </div>
-                    <div class="footer-payload">
-                        <img src="img/footer/footer-img.png" alt="image" class="footer-pay__img">
-                        <img src="img/footer/footer-img2.png" alt="image" class="footer-pay__img">
-                    </div>
                 </div>
             </div>
             <div class="footer-list">
-                <li><a href="" class="footer-column-list__link">Выходные данные</a></li>
-                <li><a href="" class="footer-column-list__link">Данные</a></li>
-                <li><a href="" class="footer-column-list__link">Данные</a></li>
-                <li><a href="" class="footer-column-list__link">Данные</a></li>
+                <p class="footer-column-list__title">Толочинская Софья</p>
+                <p class="footer-column-list__text">УНП: 337616189</p>
             </div>
             <div class="footer-media">
                 <div class="footer-media-column">
@@ -387,29 +367,37 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-pay">
-                <img src="img/footer/footer-img.png" alt="image" class="footer-pay__img">
-                <img src="img/footer/footer-img2.png" alt="image" class="footer-pay__img">
-            </div>
         </div>
     </div>
     <div class="footer-box">
-        <div class="footer-policy">
-            <a href="" class="footer-policy__link">Политика конфиденциальности</a>
-            <a href="" class="footer-policy__link">Авторские права</a>
-            <a href="" class="footer-policy__link">Договор присоединения</a>
-            <a href="" class="footer-policy__link">Способы оплаты</a>
-        </div>
-        
-        <img src="img/footer/footer-img2.png" alt="image">
-        <div class="footer-column-bottom">
-            Все права защищены Тетя Соня 2022
+        <div class="container">
+            <div class="footer-box__inner">
+                <div class="footer-policy">
+                    <a href="" class="footer-policy__link">Политика конфиденциальности</a>
+                    <a href="" class="footer-policy__link">Авторские права</a>
+                    <a href="" class="footer-policy__link">Договор присоединения</a>
+                </div>
+                <div class="footer-box__row">
+                    <div class="footer-left">
+                        <div>Все права защищены <br>
+                            Тетя Соня 2022</div>
+                    </div>
+                    <div class="footer-right">
+                        <div class="footer-right__box">
+                            <span class="footer-right__text">Способы оплаты</span>
+                            <picture><source srcset="img/footer/footer-img.webp" type="image/webp"><img src="img/footer/footer-img.png" alt="image" class="footer-right__img"></picture>
+                        </div>
+                        <p>Все права защищены Тетя Соня 2022</p>
+                        <picture><source srcset="img/footer/footer-img2.webp" type="image/webp"><img src="img/footer/footer-img2.png" alt="image" class="footer-right__img2"></picture>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
     </div>
 </footer>
     </main>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script src="js/app.min.js"></script>
+	<script src="js/app.min.js?_v=20220916221752"></script>
 
 </body>
 
